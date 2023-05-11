@@ -59,33 +59,33 @@ function insertWeather(todaysWeather) {
             break;
         case 45:
             // weatherImg.src = "Assets/Images/Fog.png" //* Fog
-            weatherImg.src = "Assets/Images/Fog.png"
+            weatherImg.src = "Assets/Images/fog-svgrepo-com.svg"
             break;
         case 48:
             // weatherImg.src = "Assets/Images/RimeFog.png" //* Rime Fog
-            weatherImg.src = "Assets/Images/RimeFog.png"
+            weatherImg.src = "Assets/Images/fog-svgrepo-com.svg"
             break
         case 51:
         case 53:
         case 55:
             // weatherImg.src = "Assets/Images/Drypsky.png" //* raindrops
-            weatherImg.src = "Assets/Images/Drypsky.png"
+            weatherImg.src = "Assets/Images/lightrain-svgrepo-com.svg"
             break
         case 56:
             // weatherImg.src = "Assets/Images/LightFreezingRain.png" //* Freezing Drizzle light
-            weatherImg.src = "Assets/Images/LightFreezingRain.png"
+            weatherImg.src = "Assets/Images/sleet-svgrepo-com.svg"
             break
         case 57:
             // weatherImg.src = "Assets/Images/HeavyFreezingRain.png" //* Freezing Drizzle heavy
-            weatherImg.src = "Assets/Images/HeavyFreezingRain.png"
+            weatherImg.src = "Assets/Images/sleet-svgrepo-com.svg"
             break
         case 61:
             // weatherImg.src = "Assets/Images/LightRain.png" //*Rain Slight
-            weatherImg.src = "Assets/Images/LightRain.png"
+            weatherImg.src = "Assets/Images/lightrain-svgrepo-com.svg"
             break
         case 63:
             // weatherImg.src = "Assets/Images/ModeratRain.png" //* Rain Moderate
-            weatherImg.src = "Assets/Images/ModeratRain.png"
+            weatherImg.src = "Assets/Images/lightrain-svgrepo-com.svg"
             break
         case 65:
             // weatherImg.src = "Assets/Images/It's Gon Rain.jpeg" //* Heavy Rain
@@ -93,54 +93,54 @@ function insertWeather(todaysWeather) {
             break
         case 66:
             // weatherImg.src = "Assets/Images/LightFreezingRain.png" //* Heavy Rain
-            weatherImg.src = "Assets/Images/LightFreezingRain.png"
+            weatherImg.src = "Assets/Images/rain-svgrepo-com.svg"
             break
 
         case 67:
             // weatherImg.src = "Assets/Images/Dryp sky.png" //* Rain
-            weatherImg.src = "Assets/Images/Dryp sky.png"
+            weatherImg.src = "Assets/Images/lightrain-svgrepo-com.svg"
             break
         case 71:
             // weatherImg.src = "Assets/Images/RimeFog.png" //* Rime Fog
-            weatherImg.src = "Assets/Images/RimeFog.png"
+            weatherImg.src = "Assets/Images/fog-svgrepo-com.svg"
             break
 
         case 73:
             // weatherImg.src = "Assets/Images/RimeFog.png" //* Rime Fog
-            weatherImg.src = "Assets/Images/RimeFog.png"
+            weatherImg.src = "Assets/Images/fog-svgrepo-com.svg"
             break
 
         case 75:
             // weatherImg.src = "Assets/Images/Dryp sky.png" //* light snow
-            weatherImg.src = "Assets/Images/Dryp sky.png"
+            weatherImg.src = "Assets/Images/snow-svgrepo-com.svg"
             break
         case 77:
             // weatherImg.src = "Assets/Images/Dryp sky.png" //* snow
-            weatherImg.src = "Assets/Images/Dryp sky.png"
+            weatherImg.src = "Assets/Images/snow-svgrepo-com.svg"
             break
         case 80:
             // weatherImg.src = "Assets/Images/RimeFog.png" //* Rime Fog
-            weatherImg.src = "Assets/Images/RimeFog.png"
+            weatherImg.src = "Assets/Images/lightrain-svgrepo-com.svg"
             break
 
         case 81:
             // weatherImg.src = "Assets/Images/RimeFog.png" //* Rime Fog
-            weatherImg.src = "Assets/Images/RimeFog.png"
+            weatherImg.src = "Assets/Images/rain-svgrepo-com.svg"
             break
 
         case 82:
             // weatherImg.src = "Assets/Images/Dryp sky.png" //*  
-            weatherImg.src = "Assets/Images/Dryp sky.png"
+            weatherImg.src = "Assets/Images/rain-svgrepo-com.svg"
             break
 
         case 85:
             // weatherImg.src = "Assets/Images/RimeFog.png" //* Rime Fog
-            weatherImg.src = "Assets/Images/RimeFog.png"
+            weatherImg.src = "Assets/Images/snow-svgrepo-com.svg"
             break
 
         case 86:
             // weatherImg.src = "Assets/Images/Dryp sky.png" //* heavy snow
-            weatherImg.src = "Assets/Images/Dryp sky.png"
+            weatherImg.src = "Assets/Images/snow-svgrepo-com.svg"
             break
 
     }
