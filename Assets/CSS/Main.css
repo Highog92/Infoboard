@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html::-webkit-scrollbar {
+    display: none;
+  }
+
 body {
     font-family: "VCR OSD Mono", "sans-serif";
     /* font-size: 49px; */
@@ -18,9 +22,22 @@ body {
 
 main {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-right: 15px;
 }
+     
+.cantine-box { grid-area: 1 / 1 / 2 / 2; }
+.bus-times-box { grid-area: 2 / 1 / 3 / 2; }
+.time { grid-area: 1 / 2 / 3 / 3; }
+.teams-box { grid-area: 1 / 3 / 3 / 4; }
 
+/* .time { grid-area: 1 / 1 / 2 / 2; }
+.cantine-box { grid-area: 2 / 1 / 3 / 2; }
+.teams-box { grid-area: 1 / 2 / 3 / 3; }
+.bus-times-box { grid-area: 1 / 3 / 3 / 4; } */
 
 section {
     border-radius: 1rem;
@@ -33,17 +50,18 @@ section {
 
 
 .window-features {
-    width: 5rem;
+    height: 100%;
 }
 
 .top-of-the-box-time {
     display: flex;
     flex-direction: row;
+    align-items: center;
     background-color: #7DFFFF;
     justify-content: space-between;
     border-radius: 1rem 1rem 0 0;
     padding: 0 10px 0 10px;
-
+    font-size: 1.1vw;
 }
 
 
@@ -62,12 +80,15 @@ section {
 }
 
 .top-of-the-box-bus {
+    position: relative;
     display: flex;
     flex-direction: row;
     background-color: #FFB640;
     justify-content: space-between;
     border-radius: 1rem 1rem 0 0;
     padding: 0 10px 0 10px;
+    font-size: 1.1vw;
+    align-items: center;
 }
 
 
@@ -89,14 +110,23 @@ section {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 10px;
+    padding: 0 20px;
+    margin: 20px 0;
+    font-size: 1.5vw;
+}
+.boxInfo p {
+    margin: 0;
 }
 
 .allBuses {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 10px;
+    padding: 0 20px;
+    font-size: 1.1vw;
+}
+.allBuses p {
+    margin: 20px 0;
 }
 
 .allBusesLine {
@@ -109,15 +139,22 @@ section {
 .bus-asset {
     display: flex;
     justify-self: center;
-    width: 100%;
-    bottom: 0;
-
-
-    animation: bus-asset 1s infinite;
+    width: 4vw;
+    bottom: -3px;
+    left: 0;
+    animation: bus-asset 15s infinite linear, bus-jump 0.8s infinite;
+    position: absolute;
+    z-index: 9999;
 }
 
 .bus-animation {
-    position: relative;
+    position: absolute;
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+}
+.bus-animation::-webkit-scrollbar {
+    display: none;
 }
 
 .clouds {
@@ -145,6 +182,8 @@ section {
     justify-content: space-between;
     border-radius: 1rem 1rem 0 0;
     padding: 0 10px 0 10px;
+    font-size: 1.1vw;
+    align-items: center;
 }
 
 .cantine-box{
@@ -158,6 +197,10 @@ section {
     text-align: center;
     font-size: 1rem;
     border-radius: 0 0 1rem 1rem;
+}
+#cantine p {
+    font-size: 1.1vw;
+    margin: 15px;
 }
 
 .cantine-asset{
@@ -175,12 +218,13 @@ section {
     justify-content: space-between;
     border-radius: 1rem 1rem 0 0;
     padding: 0 10px 0 10px;
+    font-size: 1.1vw;
+    align-items: center;
 }
 
 
 .teams-box{
     box-shadow: 5px 5px 0px 0px #ff758e, 10px 10px 0px 0px #f9294f, 15px 15px 0px 0px #830018, 5px 5px 15px 5px rgba(0, 0, 0, 0);
-    grid-row: span 2;
 }
 
 .teams-box {
@@ -252,13 +296,14 @@ section {
     white-space: nowrap;
     overflow: hidden;
     width: 100%;
-    margin: 40px 0 0 0;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
 }
 
 #newsfeed {
     display: flex;
     flex-direction: row;
-    font-size: 1rem;
 }
 
 .scroll-left {
@@ -268,28 +313,28 @@ section {
     color: #ffffff;
     transform: translateX(100%);
     /* Apply animation to this element */
-    animation: scroll-left 50s linear infinite;
+    animation: scroll-left 70s linear infinite;
 }
 
 .scroll-left p {
     display: inline-flex;
     flex-direction: row;
     height: 100%;
-    margin: 0 50px;
+    margin: 0 500px;
     /* Starting position */
     align-items: center;
-    font-size: 30px;
+    font-size: 2vw;
 }
 
 
 /* Move it (define the animation) */
 @keyframes scroll-left {
     0% {
-        transform: translateX(100%);
+        transform: translateX(120%);
     }
 
     100% {
-        transform: translateX(-850%);
+        transform: translateX(-1100%);
     }
 
 
@@ -298,17 +343,32 @@ section {
 @keyframes bus-asset {
 
     0% {
-        transform: translateY(0);
+        left: -40%;
+    }
+
+    /* 50% {
+        transform: translateY(6px);
+    } */
+
+    100% {
+        left: 110%;
+    }
+}
+@keyframes bus-jump {
+
+    0% {
+        transform: translateY(0px);
     }
 
     50% {
-        transform: translateY(6px);
+        transform: translateY(-3px);
     }
 
     100% {
-        transform: translateY(0);
+        transform: translateY(0px)
     }
 }
+
 
 @keyframes cloud {
     from {
