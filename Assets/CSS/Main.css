@@ -19,7 +19,6 @@ body {
 main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-
 }
 
 
@@ -74,6 +73,7 @@ section {
 
 .bus-times-box {
     box-shadow: 5px 5px 0px 0px #FFB640, 10px 10px 0px 0px #bc8121, 15px 15px 0px 0px #835305, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+
 }
 
 #bus-times {
@@ -111,6 +111,8 @@ section {
     justify-self: center;
     width: 100%;
     bottom: 0;
+
+
     animation: bus-asset 1s infinite;
 }
 
@@ -133,6 +135,7 @@ section {
     -200px 50px rgb(255, 255, 255),
     -150px 100px rgba(255, 255, 255, 0.881);
     animation: cloud 3s linear infinite reverse;
+
 }
 
 .top-of-the-box-cantine {
@@ -144,9 +147,9 @@ section {
     padding: 0 10px 0 10px;
 }
 
-.cantine-box {
+.cantine-box{
     box-shadow: 5px 5px 0px 0px #a86dc8, 10px 10px 0px 0px #743f91, 15px 15px 0px 0px #410e5c, 5px 5px 15px 5px rgba(0, 0, 0, 0);
-
+    
 }
 
 #cantine {
@@ -157,7 +160,7 @@ section {
     border-radius: 0 0 1rem 1rem;
 }
 
-.cantine-asset {
+.cantine-asset{
     display: block;
     width: 25%;
     bottom: 0;
@@ -174,8 +177,14 @@ section {
     padding: 0 10px 0 10px;
 }
 
+
+.teams-box{
+    box-shadow: 5px 5px 0px 0px #ff758e, 10px 10px 0px 0px #f9294f, 15px 15px 0px 0px #830018, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    grid-row: span 2;
+
 .teams-box {
     box-shadow: 5px 5px 0px 0px #31d146, 10px 10px 0px 0px #03a406, 15px 15px 0px 0px #017312, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+
 }
 
 #teams {
@@ -196,7 +205,7 @@ section {
     padding: 0 10px 0 10px;
 }
 
-.teams-asset {
+.teams-asset{
     display: block;
     width: 25%;
     bottom: 0;
@@ -219,17 +228,19 @@ section {
 
 }
 
-#weather-box {}
+#weather-box {
+    
+}
 
 #current-Weather {
     font-size: 2.6vw;
 }
 
-.img-box {
+.img-box{
     height: 100px;
 }
 
-#weather-img {
+#weather-img{
     /* height: 50%; */
 }
 
@@ -284,6 +295,8 @@ section {
     100% {
         transform: translateX(-850%);
     }
+
+=======
 }
 
 @keyframes bus-asset {
@@ -309,4 +322,5 @@ section {
     to {
         left: 800px;
     }
+
 }
