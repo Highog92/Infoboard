@@ -168,14 +168,14 @@ section {
 .top-of-the-box-teams {
     display: flex;
     flex-direction: row;
-    background-color: #ffb3c1;
+    background-color: #70ff61;
     justify-content: space-between;
     border-radius: 1rem 1rem 0 0;
     padding: 0 10px 0 10px;
 }
 
 .teams-box {
-    box-shadow: 5px 5px 0px 0px #ff758e, 10px 10px 0px 0px #f9294f, 15px 15px 0px 0px #830018, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 5px 5px 0px 0px #31d146, 10px 10px 0px 0px #03a406, 15px 15px 0px 0px #017312, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
 
 #teams {
