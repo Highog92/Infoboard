@@ -111,6 +111,23 @@ section {
     justify-self: center;
     width: 100%;
     bottom: 0;
+    animation: bus-asset 1s infinite;
+}
+
+.bus-animation{
+    position: relative;
+}
+
+.clouds {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 60px;
+    height: 15px;
+    border-radius: 20px;
+    top: 35%;
+    /* left: 100px; */
+    box-shadow: 130px 50px rgb(255, 255, 255), -100px 20px rgba(255, 255, 255, 0.5);
+    animation: cloud 3s linear infinite reverse;
 }
 
 .top-of-the-box-cantine {
@@ -122,7 +139,7 @@ section {
     padding: 0 10px 0 10px;
 }
 
-.cantine-box{
+.cantine-box {
     box-shadow: 5px 5px 0px 0px #a86dc8, 10px 10px 0px 0px #743f91, 15px 15px 0px 0px #410e5c, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 
 }
@@ -135,7 +152,7 @@ section {
     border-radius: 0 0 1rem 1rem;
 }
 
-.cantine-asset{
+.cantine-asset {
     display: block;
     width: 25%;
     bottom: 0;
@@ -152,7 +169,7 @@ section {
     padding: 0 10px 0 10px;
 }
 
-.teams-box{
+.teams-box {
     box-shadow: 5px 5px 0px 0px #ff758e, 10px 10px 0px 0px #f9294f, 15px 15px 0px 0px #830018, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
 
@@ -174,7 +191,7 @@ section {
     padding: 0 10px 0 10px;
 }
 
-.teams-asset{
+.teams-asset {
     display: block;
     width: 25%;
     bottom: 0;
@@ -197,19 +214,17 @@ section {
 
 }
 
-#weather-box {
-    
-}
+#weather-box {}
 
 #current-Weather {
     font-size: 2.6vw;
 }
 
-.img-box{
+.img-box {
     height: 100px;
 }
 
-#weather-img{
+#weather-img {
     /* height: 50%; */
 }
 
@@ -263,5 +278,30 @@ section {
 
     100% {
         transform: translateX(-850%);
+    }
+}
+
+@keyframes bus-asset {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(6px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes cloud {
+    from {
+        left: -900px;
+    }
+
+    to {
+        left: 900px;
     }
 }
