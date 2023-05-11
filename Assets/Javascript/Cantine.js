@@ -32,6 +32,7 @@ fetch(thisWeeksMeals)
     .finally(() => {
         //When all is set and done
         document.querySelector('#cantine').innerHTML =
+        // <img class="cantine-asset" src="Assets/Images/cutlery-plate-svgrepo-com.svg" alt="Cutlery">
         `
         <p>${meals.Days[0].DayName}: ${meals.Days[0].Dish}</p>
         <p>${meals.Days[1].DayName}: ${meals.Days[1].Dish}</p>
