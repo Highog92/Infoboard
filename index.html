@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Info-Board</title>
+    <link rel="stylesheet" href="Assets/CSS/Main.css">
+    <script src="Assets/Javascript/Activitys.js" defer></script>
+    <script src="Assets/Javascript/Bustimes.js" defer></script>
+    <script src="Assets/Javascript/Cantine.js" defer></script>
+    <script src="Assets/Javascript/Newsfeed.js" defer></script>
+    <script src="Assets/Javascript/CurrentTime.js" defer></script>
+    <script src="Assets/Javascript/Weather.js" defer></script>
+</head>
+
+<body>
+    <main>
+
+        <section class="time">
+            <div class="top-of-the-box-time">
+                <p>KLOK OG DATO.exe</p>
+                <img class="window-features" src="Assets/Images/Window Features.svg" alt="">
+            </div>
+            <div id="time-box">
+
+            </div>
+            <div id="weather-box">
+                <p id="current-Weather"></p>
+                <img id="weather-img" src="" alt="">
+            </div>
+
+
+        </section>
+
+        <!-- <section class="weather-box">
+            <div class="top-of-the-box-weather">
+                <p>VEJRET I DAG.exe</p>
+                <img class="window-features" src="Assets/Images/Window Features.svg" alt="">
+            </div>
+
+            <div id="weather-box"></div>
+        </section> -->
+
+
+
+
+        <section class="cantine-box">
+            <div class="top-of-the-box-cantine">
+                <p>KANTINEN SERVERE I DAG.exe</p>
+                <img class="window-features" src="Assets/Images/Window Features.svg" alt="">
+            </div>
+
+            <div id="cantine">
+                <img class="cantine-asset" src="Assets/Images/cutlery-plate-svgrepo-com.svg" alt="Cutlery">
+            </div>
+        </section>
+        <section class="teams-box">
+            <div class="top-of-the-box-teams">
+                <p>HOLD.exe</p>
+                <img class="window-features" src="Assets/Images/Window Features.svg" alt="">
+            </div>
+            <div id="teams">
+                <div class="boxInfo">
+                    <p>
+                        HOLD
+                    </p>
+                    <p>
+                        FAG
+                    </p>
+                    <p>
+                        START
+                    </p>
+                </div>
+                <div id="activities"></div>
+                <img class="teams-asset" src="Assets/Images/class-svgrepo-com.svg" alt="Teams">
+            </div>
+        </section>
+        <section class="bus-times-box">
+            <div class="top-of-the-box-bus">
+                <p>BUSTIDER.exe</p>
+                <img class="window-features" src="Assets/Images/Window Features.svg" alt="">
+            </div>
+            <div class="boxInfo">
+                <p>
+                    LINJE
+                </p>
+                <p>
+                    STOPPESTED
+                </p>
+                <p>
+                    AFGANG
+                </p>
+            </div>
+            <div id="bus-times"> </div>
+            <img class="bus-asset" src="Assets/Images/BUS GRAPHIC.png" alt="Bus">
+        </section>
+    </main>
+    <section class="newsreel">
+        <div id="newsfeed" class="scroll-left">
+            <div id="newsreel"></div>
+        </div>
+    </section>
+</body>
+
+</html>
