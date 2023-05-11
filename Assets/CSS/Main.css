@@ -114,7 +114,7 @@ section {
     animation: bus-asset 1s infinite;
 }
 
-.bus-animation{
+.bus-animation {
     position: relative;
 }
 
@@ -125,8 +125,13 @@ section {
     height: 15px;
     border-radius: 20px;
     top: 35%;
-    /* left: 100px; */
-    box-shadow: 130px 50px rgb(255, 255, 255), -100px 20px rgba(255, 255, 255, 0.5);
+    left: 300px;
+    box-shadow: 130px 50px rgb(255, 255, 255), 
+    -100px 20px rgba(255, 255, 255, 0.684), 
+    -100px 20px rgba(255, 255, 255, 0.748), 
+    -50px 70px rgba(255, 255, 255, 0.927),
+    -200px 50px rgb(255, 255, 255),
+    -150px 100px rgba(255, 255, 255, 0.881);
     animation: cloud 3s linear infinite reverse;
 }
 
