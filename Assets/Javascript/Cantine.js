@@ -1,13 +1,5 @@
 
 
-
-
-
-
-
-
-
-
 const thisWeeksMeals = "https://infoskaerm.techcollege.dk/umbraco/api/content/getcanteenmenu/?type=json#downloadJSON=true"
 
 let meals;

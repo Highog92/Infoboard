@@ -111,6 +111,31 @@ section {
     justify-self: center;
     width: 100%;
     bottom: 0;
+
+
+    animation: bus-asset 1s infinite;
+}
+
+.bus-animation {
+    position: relative;
+}
+
+.clouds {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 10%;
+    height: 6%;
+    border-radius: 20px;
+    top: 30%;
+    left: 300px;
+    box-shadow: 130px 50px rgb(255, 255, 255), 
+    -100px 20px rgba(255, 255, 255, 0.684), 
+    -100px 20px rgba(255, 255, 255, 0.748), 
+    -50px 70px rgba(255, 255, 255, 0.927),
+    -200px 50px rgb(255, 255, 255),
+    -150px 100px rgba(255, 255, 255, 0.881);
+    animation: cloud 3s linear infinite reverse;
+
 }
 
 .top-of-the-box-cantine {
@@ -146,15 +171,20 @@ section {
 .top-of-the-box-teams {
     display: flex;
     flex-direction: row;
-    background-color: #ffb3c1;
+    background-color: #70ff61;
     justify-content: space-between;
     border-radius: 1rem 1rem 0 0;
     padding: 0 10px 0 10px;
 }
 
+
 .teams-box{
     box-shadow: 5px 5px 0px 0px #ff758e, 10px 10px 0px 0px #f9294f, 15px 15px 0px 0px #830018, 5px 5px 15px 5px rgba(0, 0, 0, 0);
     grid-row: span 2;
+
+.teams-box {
+    box-shadow: 5px 5px 0px 0px #31d146, 10px 10px 0px 0px #03a406, 15px 15px 0px 0px #017312, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+
 }
 
 #teams {
@@ -265,4 +295,32 @@ section {
     100% {
         transform: translateX(-850%);
     }
+
+=======
+}
+
+@keyframes bus-asset {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(6px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes cloud {
+    from {
+        left: -600px;
+    }
+
+    to {
+        left: 800px;
+    }
+
 }
