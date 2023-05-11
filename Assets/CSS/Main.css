@@ -181,6 +181,7 @@ section {
 .teams-box{
     box-shadow: 5px 5px 0px 0px #ff758e, 10px 10px 0px 0px #f9294f, 15px 15px 0px 0px #830018, 5px 5px 15px 5px rgba(0, 0, 0, 0);
     grid-row: span 2;
+}
 
 .teams-box {
     box-shadow: 5px 5px 0px 0px #31d146, 10px 10px 0px 0px #03a406, 15px 15px 0px 0px #017312, 5px 5px 15px 5px rgba(0, 0, 0, 0);
