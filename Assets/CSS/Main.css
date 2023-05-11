@@ -121,10 +121,10 @@ section {
 .clouds {
     position: absolute;
     background-color: rgb(255, 255, 255);
-    width: 60px;
-    height: 15px;
+    width: 10%;
+    height: 6%;
     border-radius: 20px;
-    top: 35%;
+    top: 30%;
     left: 300px;
     box-shadow: 130px 50px rgb(255, 255, 255), 
     -100px 20px rgba(255, 255, 255, 0.684), 
@@ -303,10 +303,10 @@ section {
 
 @keyframes cloud {
     from {
-        left: -900px;
+        left: -600px;
     }
 
     to {
-        left: 900px;
+        left: 800px;
     }
 }
