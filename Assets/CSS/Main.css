@@ -34,7 +34,6 @@ main {
 section {
     border-radius: 1rem;
     /* background-color: #FDFBE6; */
-    background-color: #feff9c;
     margin: 2rem;
     box-shadow: 5px 5px 0px 0px #88C0E4, 10px 10px 0px 0px #6580B7, 15px 15px 0px 0px #486cb5, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 
@@ -172,18 +171,22 @@ p {
 
 .cantine-box {
     grid-area: 1 / 1 / 2 / 2;
+    background-color: #E1AEFCac;
 }
 
 .bus-times-box {
     grid-area: 2 / 1 / 3 / 2;
+    background-color: #FFB640ac;
 }
 
 .time {
     grid-area: 1 / 2 / 3 / 3;
+    background-color: #7DFFFFac;
 }
 
 .teams-box {
     grid-area: 1 / 3 / 3 / 4;
+    background-color: #70ff61ac;
 }
 
 #cantine {
