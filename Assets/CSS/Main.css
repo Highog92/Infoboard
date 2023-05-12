@@ -249,7 +249,19 @@ section {
     text-align: center;
     font-size: 1rem;
     border-radius: 0 0 1rem 1rem;
+}
 
+#teamsTable th {
+    width: 25%;
+    font-size: 1.5vw;
+    font-weight: normal;
+}
+#teamsTable tr {
+    
+}
+#teamsTable td {
+    font-size: 1.1vw;
+    padding: 0.6vw 0;
 }
 
 .top-of-the-box-weather {
