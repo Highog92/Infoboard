@@ -1,7 +1,9 @@
 @import url('https://fonts.cdnfonts.com/css/vcr-osd-mono');
+html::-webkit-scrollbar {     display: none;   }
 
 * {
     box-sizing: border-box;
+    
 }
 
 body {
@@ -19,6 +21,7 @@ body {
 main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    margin-right: 15px;
 }
 
 
@@ -49,6 +52,8 @@ section {
 
 #time-box {
     display: flex;
+    grid-column-start: 2;
+    grid-column-end: 3;
     flex-direction: column;
     text-align: center;
     font-size: 3vw;
@@ -111,8 +116,6 @@ section {
     justify-self: center;
     width: 100%;
     bottom: 0;
-
-
     animation: bus-asset 1s infinite;
 }
 
@@ -149,7 +152,8 @@ section {
 
 .cantine-box{
     box-shadow: 5px 5px 0px 0px #a86dc8, 10px 10px 0px 0px #743f91, 15px 15px 0px 0px #410e5c, 5px 5px 15px 5px rgba(0, 0, 0, 0);
-    
+    grid-row-start: 1;
+    grid-row-end: 2;
 }
 
 #cantine {
