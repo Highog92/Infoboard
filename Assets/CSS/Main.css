@@ -3,12 +3,12 @@ html::-webkit-scrollbar {     display: none;   }
 
 * {
     box-sizing: border-box;
-    
+
 }
 
 body {
     font-family: "VCR OSD Mono", "sans-serif";
-    /* font-size: 49px; */
+    font-size: 3rem;
     background-image:
         url("/Assets/Images/Backgorund-assets.svg"),
         url("/Assets/Images/FarBack.svg");
@@ -29,11 +29,14 @@ section {
     border-radius: 1rem;
     /* background-color: #FDFBE6; */
     background-color: #feff9c;
-    margin: 1rem;
+    margin: 2rem;
     box-shadow: 5px 5px 0px 0px #88C0E4, 10px 10px 0px 0px #6580B7, 15px 15px 0px 0px #486cb5, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+
 }
 
-
+p{
+    font-size: 3rem;
+}
 
 .window-features {
     width: 5rem;
@@ -132,12 +135,12 @@ section {
     top: 30%;
     left: 300px;
     box-shadow: 130px 50px rgb(255, 255, 255), 
-    -100px 20px rgba(255, 255, 255, 0.684), 
-    -100px 20px rgba(255, 255, 255, 0.748), 
-    -50px 70px rgba(255, 255, 255, 0.927),
-    -200px 50px rgb(255, 255, 255),
-    -150px 100px rgba(255, 255, 255, 0.881);
-    animation: cloud 3s linear infinite reverse;
+    180px 200px rgba(255, 255, 255, 0.684), 
+    50px 150px rgba(255, 255, 255, 0.748), 
+    300px 150px rgba(255, 255, 255, 0.927),
+    400px -50px rgb(255, 255, 255),
+    0px 0px rgba(255, 255, 255, 0.881);
+    animation: cloud 3s linear infinite;
 
 }
 
@@ -157,6 +160,7 @@ section {
 }
 
 #cantine {
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -198,6 +202,7 @@ section {
     text-align: center;
     font-size: 1rem;
     border-radius: 0 0 1rem 1rem;
+    padding: 1rem;
 
 }
 
@@ -229,6 +234,7 @@ section {
     width: 40%;
     justify-content: center;
     padding-bottom: 50px;
+    
 }
 
 
@@ -259,6 +265,7 @@ section {
     margin: 40px 0 0 0;
 }
 
+
 #newsfeed {
     display: flex;
     flex-direction: row;
@@ -282,7 +289,7 @@ section {
     margin: 0 50px;
     /* Starting position */
     align-items: center;
-    font-size: 30px;
+    font-size: 4rem;
 }
 
 
@@ -316,11 +323,11 @@ section {
 
 @keyframes cloud {
     from {
-        left: -600px;
+        left: 1500px;
     }
 
     to {
-        left: 800px;
+        left: -800px;
     }
 
 }
