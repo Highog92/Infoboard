@@ -57,18 +57,22 @@ p {
 
 #time-box {
     display: flex;
-    grid-column-start: 2;
-    grid-column-end: 3;
     flex-direction: column;
     text-align: center;
-    font-size: 3vw;
+    /* font-size: 4vw; */
     border-radius: 0 0 1rem 1rem;
     gap: 1.6rem;
-    margin-top: 2rem;
+    margin-top: 4vw;
 }
 
 #time-box p {
     margin: 0;
+}
+#clock {
+    font-size: 4vw;
+}
+#date {
+    font-size: 1.7vw;
 }
 
 .top-of-the-box-bus {
