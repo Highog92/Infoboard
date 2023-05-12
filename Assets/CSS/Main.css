@@ -1,5 +1,8 @@
 @import url('https://fonts.cdnfonts.com/css/vcr-osd-mono');
-html::-webkit-scrollbar {     display: none;   }
+
+html::-webkit-scrollbar {
+    display: none;
+}
 
 * {
     box-sizing: border-box;
@@ -10,10 +13,9 @@ body {
     font-family: "VCR OSD Mono", "sans-serif";
     font-size: 3rem;
     background-image:
-        url("/Assets/Images/Backgorund-assets.svg"),
-        url("/Assets/Images/FarBack.svg");
+        url("/Assets/Images/windowsbg.jpg");
     background-repeat: no-repeat;
-    background-size: 100;
+    background-size: 100%;
     margin: 0;
 }
 
@@ -34,7 +36,7 @@ section {
 
 }
 
-p{
+p {
     font-size: 3rem;
 }
 
@@ -134,12 +136,12 @@ p{
     border-radius: 20px;
     top: 30%;
     left: 300px;
-    box-shadow: 130px 50px rgb(255, 255, 255), 
-    180px 200px rgba(255, 255, 255, 0.684), 
-    50px 150px rgba(255, 255, 255, 0.748), 
-    300px 150px rgba(255, 255, 255, 0.927),
-    400px -50px rgb(255, 255, 255),
-    0px 0px rgba(255, 255, 255, 0.881);
+    box-shadow: 130px 50px rgb(255, 255, 255),
+        180px 200px rgba(255, 255, 255, 0.684),
+        50px 150px rgba(255, 255, 255, 0.748),
+        300px 150px rgba(255, 255, 255, 0.927),
+        400px -50px rgb(255, 255, 255),
+        0px 0px rgba(255, 255, 255, 0.881);
     animation: cloud 3s linear infinite;
 
 }
@@ -153,7 +155,7 @@ p{
     padding: 0 10px 0 10px;
 }
 
-.cantine-box{
+.cantine-box {
     box-shadow: 5px 5px 0px 0px #a86dc8, 10px 10px 0px 0px #743f91, 15px 15px 0px 0px #410e5c, 5px 5px 15px 5px rgba(0, 0, 0, 0);
     grid-row-start: 1;
     grid-row-end: 2;
@@ -168,7 +170,7 @@ p{
     border-radius: 0 0 1rem 1rem;
 }
 
-.cantine-asset{
+.cantine-asset {
     display: block;
     width: 40%;
     bottom: 0;
@@ -186,7 +188,7 @@ p{
 }
 
 
-.teams-box{
+.teams-box {
     box-shadow: 5px 5px 0px 0px #ff758e, 10px 10px 0px 0px #f9294f, 15px 15px 0px 0px #830018, 5px 5px 15px 5px rgba(0, 0, 0, 0);
     grid-row: span 2;
 }
@@ -206,6 +208,17 @@ p{
 
 }
 
+#teamsTable th {
+    width: 25%;
+    font-size: 1.5vw;
+    font-weight: normal;
+}
+
+#teamsTable td {
+    font-size: 1.1vw;
+    padding: 0.6vw 0;
+}
+
 .top-of-the-box-weather {
     display: flex;
     flex-direction: row;
@@ -215,7 +228,7 @@ p{
     padding: 0 10px 0 10px;
 }
 
-.teams-asset{
+.teams-asset {
     display: block;
     width: 40%;
     bottom: 0;
@@ -234,7 +247,7 @@ p{
     width: 40%;
     justify-content: center;
     padding-bottom: 50px;
-    
+
 }
 
 
@@ -242,11 +255,11 @@ p{
     font-size: 2.6vw;
 }
 
-.img-box{
+.img-box {
     height: 100px;
 }
 
-#weather-img{
+#weather-img {
     /* height: 50%; */
 }
 
