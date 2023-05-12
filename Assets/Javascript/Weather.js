@@ -5,33 +5,38 @@
 const Weather = "https://api.open-meteo.com/v1/forecast?latitude=57.05&longitude=9.92&hourly=temperature_2m,weathercode&forecast_days=1"
 let todaysWeather;
 
-fetch(Weather)
-    .then((response) => {
-        //parsing data
-        return response.json()
-    })
+getWeather()
+function getWeather() {
 
-    .then((data) => {
-        //The data you wanna use
-        console.log(data);
-        todaysWeather = data
+    fetch(Weather)
+        .then((response) => {
+            //parsing data
+            return response.json()
+        })
 
-        // document.querySelector('#weather-box').innerHTML = 
-        // `<p>Temperatur pr. time: ${todaysWeather.hourly.temperature_2m}</p>
-        // <p>Regn: ${todaysWeather.hourly.rain}</p>
-        // <p>Sne: ${todaysWeather.hourly.snowfall}</p>
-        // <p>Skydække: ${todaysWeather.hourly.cloudcover}</p>
-        // <p>Vind m/s: ${todaysWeather.hourly.windspeed_10m}</p>
-        // <p>UV: ${todaysWeather.hourly.uv_index}</p>`
+        .then((data) => {
+            //The data you wanna use
+            console.log(data);
+            todaysWeather = data
 
-        insertWeather(todaysWeather)
+            // document.querySelector('#weather-box').innerHTML = 
+            // `<p>Temperatur pr. time: ${todaysWeather.hourly.temperature_2m}</p>
+            // <p>Regn: ${todaysWeather.hourly.rain}</p>
+            // <p>Sne: ${todaysWeather.hourly.snowfall}</p>
+            // <p>Skydække: ${todaysWeather.hourly.cloudcover}</p>
+            // <p>Vind m/s: ${todaysWeather.hourly.windspeed_10m}</p>
+            // <p>UV: ${todaysWeather.hourly.uv_index}</p>`
 
-    })
+            insertWeather(todaysWeather)
 
-    .catch((error) => {
-        //If theres an error
-        console.error(error)
-    })
+        })
+
+        .catch((error) => {
+            //If theres an error
+            console.error(error)
+        })
+
+}
 
 let currentIndexTime = new Date().getHours()
 let currentWeather = document.querySelector('#current-Weather')
@@ -178,8 +183,10 @@ function insertWeather(todaysWeather) {
             weatherImg.src = "Assets/Images/snow-svgrepo-com.svg"
             weatherExplanation.innerHTML = ''
             break
-
     }
+    setTimeout(() => {
+        getWeather()
+    }, 300000);
 }
 
 

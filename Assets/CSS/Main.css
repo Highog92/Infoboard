@@ -69,15 +69,22 @@ section {
     display: flex;
     flex-direction: column;
     text-align: center;
-    font-size: 3vw;
+    /* font-size: 4vw; */
     border-radius: 0 0 1rem 1rem;
     gap: 1.6rem;
-    margin-top: 2rem;
+    margin-top: 4vw;
 }
 
 #time-box p {
     margin: 0;
 }
+#clock {
+    font-size: 4vw;
+}
+#date {
+    font-size: 1.7vw;
+}
+
 
 .top-of-the-box-bus {
     position: relative;
@@ -126,13 +133,13 @@ section {
     font-size: 1.1vw;
 }
 .allBuses p {
-    margin: 20px 0;
+    margin: 18px 0;
 }
 
 .allBusesLine {
     background-color: #FFB640;
-    border: 2px solid black;
-    border-radius: 4px;
+    border: 4px solid black;
+    border-radius: 8px;
     padding: 2px;
 }
 
@@ -203,6 +210,10 @@ section {
     margin: 15px;
 }
 
+.bold {
+    /* font-weight: bold; */
+}
+
 .cantine-asset{
     display: block;
     width: 40%;
@@ -265,10 +276,13 @@ section {
     text-align: center;
     font-size: 1rem;
     border-radius: 0 0 1rem 1rem;
-    margin: auto;
+    margin: 5vw auto;
     width: 40%;
     justify-content: center;
     padding-bottom: 50px;
+}
+#weather-box p {
+    margin: 0;
 }
 
 
@@ -280,8 +294,8 @@ section {
     height: 100px;
 }
 
-#weather-img{
-    /* height: 50%; */
+#weather-explanation {
+    font-size: 1.5vw;
 }
 
 

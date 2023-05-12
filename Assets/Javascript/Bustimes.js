@@ -1,6 +1,8 @@
 const Skovgaerdsvej = "https://xmlopen.rejseplanen.dk/bin/rest.exe/multiDepartureBoard?id1=851400602&id2=851973402&rttime&format=json&useBus=1"
 let busarrivals;
 
+getBuses()
+function getBuses() {
 fetch(Skovgaerdsvej)
     .then((response) => {
         //parsing data
@@ -34,22 +36,12 @@ fetch(Skovgaerdsvej)
            </div>
             `
         }
-// "rfTime" hvis den er forsinket
-
-
-
-        //     busarrivals.MultiDepartureBoard.Departure.map((bus) => {
-
-        //         let removeRoadName = bus.stop
-        //             .replace(/\s*\([^)]*\)/, ''); // remove anything inside parentheses
-
-        //         document.querySelector('#bus-times').innerHTML += `
-        //         <div class="allBuses">
-        //             <p class="allBusesLine">${bus.line}</p>
-        //             <p>${removeRoadName.toUpperCase()}</p>
-        //             <p>${bus.time}</p>
-        //        </div>
-        //         `
-        //     })
     })
+    setTimeout(() => {
+        getWeather()
+    }, 300000);
+}
 
+
+    
+    // "rfTime" hvis den er forsinket
