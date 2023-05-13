@@ -72,9 +72,11 @@ p {
 #time-box p {
     margin: 0;
 }
+
 #clock {
     font-size: 4vw;
 }
+
 #date {
     font-size: 1.7vw;
 }
@@ -194,6 +196,8 @@ p {
 
 .weather {
     grid-area: 2 / 2 / 3 / 3;
+    background-color: #746ee8ac;
+
 }
 
 #cantine {
