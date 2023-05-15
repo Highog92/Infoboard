@@ -22,9 +22,9 @@ body {
 
 main {
     display: grid;
-    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: 1.2fr 0.5fr 2fr;
     margin-right: 15px;
-    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: repeat(3, 1fr); */
     grid-template-rows: repeat(2, auto);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
@@ -45,18 +45,9 @@ p {
 }
 
 .window-features {
-    width: 20%;
+    width: 6vw;
 }
 
-.top-of-the-box-time {
-    display: flex;
-    flex-direction: row;
-    background-color: #7DFFFF;
-    justify-content: space-between;
-    border-radius: 1rem 1rem 0 0;
-    padding: 0 10px 0 10px;
-
-}
 
 
 #time-box {
@@ -79,15 +70,6 @@ p {
 
 #date {
     font-size: 1.7vw;
-}
-
-.top-of-the-box-bus {
-    display: flex;
-    flex-direction: row;
-    background-color: #FFB640;
-    justify-content: space-between;
-    border-radius: 1rem 1rem 0 0;
-    padding: 0 10px 0 10px;
 }
 
 
@@ -136,6 +118,7 @@ p {
 
 .bus-animation {
     position: relative;
+    overflow: hidden;
 }
 
 .clouds {
@@ -156,14 +139,6 @@ p {
 
 }
 
-.top-of-the-box-cantine {
-    display: flex;
-    flex-direction: row;
-    background-color: #E1AEFC;
-    justify-content: space-between;
-    border-radius: 1rem 1rem 0 0;
-    padding: 0 10px 0 10px;
-}
 
 .cantine-box {
     box-shadow: 5px 5px 0px 0px #a86dc8, 10px 10px 0px 0px #743f91, 15px 15px 0px 0px #410e5c, 5px 5px 15px 5px rgba(0, 0, 0, 0);
@@ -217,15 +192,6 @@ p {
     padding: 10px;
 }
 
-.top-of-the-box-teams {
-    display: flex;
-    flex-direction: row;
-    background-color: #70ff61;
-    justify-content: space-between;
-    border-radius: 1rem 1rem 0 0;
-    padding: 0 10px 0 10px;
-}
-
 
 .teams-box {
     box-shadow: 5px 5px 0px 0px #ff758e, 10px 10px 0px 0px #f9294f, 15px 15px 0px 0px #830018, 5px 5px 15px 5px rgba(0, 0, 0, 0);
@@ -258,14 +224,6 @@ p {
     padding: 0.6vw 0;
 }
 
-.top-of-the-box-weather {
-    display: flex;
-    flex-direction: row;
-    background-color: #746ee8;
-    justify-content: space-between;
-    border-radius: 1rem 1rem 0 0;
-    padding: 0 10px 0 10px;
-}
 
 .teams-asset {
     display: block;

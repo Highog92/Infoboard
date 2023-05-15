@@ -1,0 +1,46 @@
+
+.top-of-the-box-time {
+    display: flex;
+    flex-direction: row;
+    background-color: #7DFFFF;
+    justify-content: space-between;
+    border-radius: 1rem 1rem 0 0;
+    padding: 0 10px 0 10px;
+
+}
+
+.top-of-the-box-bus {
+    display: flex;
+    flex-direction: row;
+    background-color: #FFB640;
+    justify-content: space-between;
+    border-radius: 1rem 1rem 0 0;
+    padding: 0 10px 0 10px;
+}
+
+.top-of-the-box-cantine {
+    display: flex;
+    flex-direction: row;
+    background-color: #E1AEFC;
+    justify-content: space-between;
+    border-radius: 1rem 1rem 0 0;
+    padding: 0 10px 0 10px;
+}
+
+.top-of-the-box-teams {
+    display: flex;
+    flex-direction: row;
+    background-color: #70ff61;
+    justify-content: space-between;
+    border-radius: 1rem 1rem 0 0;
+    padding: 0 10px 0 10px;
+}
+
+.top-of-the-box-weather {
+    display: flex;
+    flex-direction: row;
+    background-color: #746ee8;
+    justify-content: space-between;
+    border-radius: 1rem 1rem 0 0;
+    padding: 0 10px 0 10px;
+}
