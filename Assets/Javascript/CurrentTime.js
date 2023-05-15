@@ -6,6 +6,7 @@ function updateTime() {
     let hour = date.getHours()
     let minutes = date.getMinutes()
 
+
     let todayDay = date.getDay()
     let todayDate = date.getDate()
     let todayName;
@@ -14,25 +15,25 @@ function updateTime() {
 
     switch (todayDay) {
         case 0:
-            todayName = "Mandag"
+            todayName = "Søndag"
             break;
         case 1:
-            todayName = "Tirsdag"
+            todayName = "Mandag"
             break;
         case 2:
-            todayName = "Onsdag"
+            todayName = "Tirsdag"
             break;
         case 3:
-            todayName = "Torsdag"
+            todayName = "Onsdag"
             break;
         case 4:
-            todayName = "Fredag"
+            todayName = "Torsdag"
             break;
         case 5:
-            todayName = "Lørdag"
+            todayName = "Fredag"
             break;
         case 6:
-            todayName = "Søndag"
+            todayName = "Lørdag"
             break;
     }
 
