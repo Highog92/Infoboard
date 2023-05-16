@@ -113,7 +113,7 @@ p {
     justify-self: center;
     width: 100%;
     bottom: 0;
-    animation: bus-asset 1s infinite;
+    animation: bus-asset 12s infinite ease-in-out, jump 1.5s infinite ease-in-out;
 }
 
 .bus-animation {
@@ -172,6 +172,7 @@ p {
 .weather {
     grid-area: 2 / 2 / 3 / 3;
     background-color: #746ee8ac;
+    box-shadow: 5px 5px 0px 0px #746ee8, 10px 10px 0px 0px #506fae, 15px 15px 0px 0px #506fae, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 
 }
 
@@ -329,32 +330,48 @@ p {
     100% {
         transform: translateX(-850%);
     }
-
-
 }
 
 @keyframes bus-asset {
 
     0% {
-        transform: translateY(0);
+        transform: translateX(-120%);
     }
 
-    50% {
-        transform: translateY(6px);
+    40% {
+        transform: translateX(0%);
+    }
+
+    60% {
+        transform: translateX(0%);
     }
 
     100% {
-        transform: translateY(0);
+        transform: translateX(120%);
+    }
+}
+@keyframes jump {
+
+    0% {
+        translate: 0 0vw;
+    }
+
+    50% {
+        translate: 0 0.35vw;
+    }
+
+    100% {
+        translate: 0 0vw;
     }
 }
 
 @keyframes cloud {
     from {
-        left: 1500px;
+        left: 1900px;
     }
 
     to {
-        left: -800px;
+        left: -900px;
     }
 
 }
