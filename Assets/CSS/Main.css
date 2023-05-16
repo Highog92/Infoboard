@@ -270,6 +270,10 @@ p {
     margin: 1vw 0 0 0;
 }
 
+#weather-explanation {
+    font-size: 1.6vw;
+}
+
 .img-box {
     height: 100px;
 }
@@ -302,12 +306,12 @@ p {
 
 .scroll-left {
     width: 100vw;
-    height: 10vh;
+    height: 7vh;
     position: relative;
     color: #ffffff;
     transform: translateX(100%);
     /* Apply animation to this element */
-    animation: scroll-left 50s linear infinite;
+    animation: scroll-left 70s linear infinite;
 }
 
 .scroll-left p {
