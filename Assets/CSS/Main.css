@@ -275,6 +275,7 @@ p {
 
 #weather-explanation {
     font-size: 1.6vw;
+    margin-top: 0;
 }
 
 .img-box {
@@ -282,7 +283,7 @@ p {
 }
 
 #weather-img {
-    animation: weather 2s infinite ease-in-out;
+    animation: weather 7s infinite ease-in-out;
 }
 
 
@@ -383,6 +384,23 @@ p {
 
 }
 
+@keyframes weather {
+    0% {
+        transform: translateY(-0.5vw);
+    }
+    25% {
+        transform: translateY(0.5vw); 
+    }
+    50% {
+        transform: translateY(-0.5vw);
+    }
+    75% {
+        transform: translateY(0.5vw); 
+    }
+    100% {
+        transform: translateY(-0.5vw);
+    }
+}
 @keyframes cutlery {
     from {
         transform: rotate(0deg);
@@ -394,14 +412,4 @@ p {
 
 }
 
-@keyframes cutlery {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-
-}
 
