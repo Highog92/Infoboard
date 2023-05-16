@@ -321,7 +321,7 @@ p {
     display: inline-flex;
     flex-direction: row;
     height: 100%;
-    margin: 0 50px;
+    margin: 0 70px;
     /* Starting position */
     align-items: center;
     font-size: 4rem;
@@ -374,7 +374,7 @@ p {
 
 @keyframes cloud {
     from {
-        left: 1900px;
+        left: 3000px;
     }
 
     to {
