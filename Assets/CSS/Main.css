@@ -124,8 +124,8 @@ p {
 .clouds {
     position: absolute;
     background-color: rgb(255, 255, 255);
-    width: 10%;
-    height: 6%;
+    width: 2.2vw;
+    height: 1vh;
     border-radius: 20px;
     top: 30%;
     left: 300px;
@@ -184,12 +184,27 @@ p {
     border-radius: 0 0 1rem 1rem;
 }
 
+
+
 .cantine-asset {
     display: block;
     width: 40%;
     bottom: 0;
     margin: auto;
     padding: 10px;
+}
+
+#cantineTable th {
+    width: 25%;
+    font-size: 1.5vw;
+    font-weight: normal;
+    text-align: start;
+    text-transform: capitalize;
+}
+
+#cantineTable td {
+    font-size: 1.1vw;
+    padding: 0.6vw 0;
 }
 
 

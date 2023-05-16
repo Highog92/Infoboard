@@ -23,13 +23,41 @@ fetch(thisWeeksMeals)
 
     .finally(() => {
         //When all is set and done
-        document.querySelector('#cantine').innerHTML =
-        // <img class="cantine-asset" src="Assets/Images/cutlery-plate-svgrepo-com.svg" alt="Cutlery">
-        `
-        <p>${meals.Days[0].DayName}: ${meals.Days[0].Dish}</p>
-        <p>${meals.Days[1].DayName}: ${meals.Days[1].Dish}</p>
-        <p>${meals.Days[2].DayName}: ${meals.Days[2].Dish}</p>
-        <p>${meals.Days[3].DayName}: ${meals.Days[3].Dish}</p>
-        <p>${meals.Days[4].DayName}: ${meals.Days[4].Dish}</p>
+        document.querySelector('#cantineTable').innerHTML =
+            `
+        <tr>
+        <th>
+        ${meals.Days[0].DayName}:
+        </th>
+            <td>${meals.Days[0].Dish}</td>
+        </tr>
+
+        <tr>
+        <th>
+        ${meals.Days[1].DayName}:
+        </th>
+            <td>${meals.Days[1].Dish}</td>
+        </tr>
+
+        <tr>
+        <th>
+        ${meals.Days[2].DayName}:
+        </th>
+            <td>${meals.Days[2].Dish}</td>
+        </tr>
+
+        <tr>
+        <th>
+        ${meals.Days[3].DayName}:
+        </th>
+            <td>${meals.Days[3].Dish}</td>
+        </tr>
+
+        <tr>
+        <th>
+        ${meals.Days[4].DayName}:
+        </th>
+            <td>${meals.Days[4].Dish}</td>
+        </tr>
         `
     })
