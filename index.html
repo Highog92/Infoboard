@@ -8,12 +8,13 @@
     <title>School Info-Board</title>
     <link rel="stylesheet" href="Assets/CSS/Main.css">
     <link rel="stylesheet" href="Assets/CSS/Top-of-the-box.css">
-    <!-- <script src="Assets/Javascript/Activitys.js" defer></script> -->
+    <link rel="stylesheet" href="Assets/CSS/AnalogClock.css">
     <script src="Assets/Javascript/uhhh.js" type="module" defer></script>
-    <!-- <script src="Assets/Javascript/Bustimes.js" defer></script> -->
+    <script src="Assets/Javascript/Bustimes.js" defer></script>
     <script src="Assets/Javascript/Cantine.js" defer></script>
-    <!-- <script src="Assets/Javascript/Newsfeed.js" defer></script> -->
+    <script src="Assets/Javascript/Newsfeed.js" defer></script>
     <script src="Assets/Javascript/CurrentTime.js" defer></script>
+    <script src="Assets/Javascript/AnalogClock.js" defer></script>
     <script src="Assets/Javascript/Weather.js" defer></script>
 </head>
 
@@ -25,9 +26,15 @@
                 <p>🕒 KLOK OG DATO.exe</p>
                 <img class="window-features" src="Assets/Images/Window Features.svg" alt="">
             </div>
-            <div id="time-box">
-
-            </div>
+            <div id="time-box"> </div>
+            <div class="clock-body">
+                <div class="hours"></div>
+                <div class="disc disc-top"></div>
+                <div class="disc disc-bottom"></div>
+                <div class="hand second"></div>
+                <div class="hand minute"></div>
+                <div class="hand hour"></div>
+              </div>
         </section>
 
         <section class="weather">
@@ -73,32 +80,6 @@
                 <img class="window-features" src="Assets/Images/Window Features.svg" alt="">
             </div>
             <div id="teams">
-                <table id="teamsTable">
-                    <tr>
-                        <th>HOLD</th>
-                        <th>FAG</th>
-                        <th>LOKALE</th>
-                        <th>START</th>
-                    </tr>
-                    <tr>
-                        <td>h1we010822</td>
-                        <td>Praktisk Web</td>
-                        <td>P-026</td>
-                        <td>08:15</td>
-                    </tr>
-                    <tr>
-                        <td>h1we010822</td>
-                        <td>Praktisk Web</td>
-                        <td>P-026</td>
-                        <td>08:15</td>
-                    </tr>
-                    <tr>
-                        <td>h1we010822</td>
-                        <td>Praktisk Web</td>
-                        <td>P-026</td>
-                        <td>08:15</td>
-                    </tr>
-                </table>
                 <img class="teams-asset" src="Assets/Images/class-svgrepo-com.svg" alt="Teams">
             </div>
         </section>

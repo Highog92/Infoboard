@@ -17,12 +17,14 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
+    aspect-ratio: 16/9;
+
 }
 
 
 main {
     display: grid;
-    grid-template-columns: 1.2fr 0.5fr 2fr;
+    grid-template-columns: 1.2fr 0.3fr 3fr;
     margin-right: 15px;
     /* grid-template-columns: repeat(3, 1fr); */
     grid-template-rows: repeat(2, auto);
@@ -37,7 +39,6 @@ section {
     background-color: #fefee3a0;
     margin: 2rem;
     box-shadow: 5px 5px 0px 0px #88C0E4, 10px 10px 0px 0px #6580B7, 15px 15px 0px 0px #486cb5, 5px 5px 15px 5px rgba(0, 0, 0, 0);
-
 }
 
 p {
