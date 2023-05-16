@@ -22,7 +22,7 @@ body {
 
 main {
     display: grid;
-    grid-template-columns: 1.2fr 0.5fr 2fr;
+    grid-template-columns: 2.5fr 0.1fr 3fr;
     margin-right: 15px;
     /* grid-template-columns: repeat(3, 1fr); */
     grid-template-rows: repeat(2, auto);
@@ -54,7 +54,7 @@ p {
     display: flex;
     flex-direction: column;
     text-align: center;
-    /* font-size: 4vw; */
+    /* font-size: 1vw; */
     border-radius: 0 0 1rem 1rem;
     gap: 1.6rem;
     margin-top: 4vw;
@@ -65,11 +65,11 @@ p {
 }
 
 #clock {
-    font-size: 4vw;
+    font-size: 2vw;
 }
 
 #date {
-    font-size: 1.7vw;
+    font-size: 1vw;
 }
 
 
@@ -106,6 +106,7 @@ p {
     border: 2px solid black;
     border-radius: 4px;
     padding: 2px;
+    font-size: 1vw;
 }
 
 .bus-asset {
@@ -197,14 +198,14 @@ p {
 
 #cantineTable th {
     width: 25%;
-    font-size: 1.5vw;
+    font-size: 1vw;
     font-weight: normal;
     text-align: start;
     text-transform: capitalize;
 }
 
 #cantineTable td {
-    font-size: 1.1vw;
+    font-size: 1vw;
     padding: 0.6vw 0;
 }
 
