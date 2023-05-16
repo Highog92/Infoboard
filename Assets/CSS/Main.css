@@ -213,13 +213,13 @@ p {
 
 }
 
-#teamsTable th {
+#teams table th {
     width: 25%;
     font-size: 1.5vw;
     font-weight: normal;
 }
 
-#teamsTable td {
+#teams table td {
     font-size: 1.1vw;
     padding: 0.6vw 0;
 }
