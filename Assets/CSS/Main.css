@@ -48,15 +48,6 @@ p {
     width: 6vw;
 }
 
-.top-of-the-box-time {
-    display: flex;
-    flex-direction: row;
-    background-color: #7DFFFF;
-    justify-content: space-between;
-    border-radius: 1rem 1rem 0 0;
-    padding: 0 10px 0 10px;
-
-}
 
 
 #time-box {
@@ -72,20 +63,13 @@ p {
 #time-box p {
     margin: 0;
 }
+
 #clock {
     font-size: 4vw;
 }
+
 #date {
     font-size: 1.7vw;
-}
-
-.top-of-the-box-bus {
-    display: flex;
-    flex-direction: row;
-    background-color: #FFB640;
-    justify-content: space-between;
-    border-radius: 1rem 1rem 0 0;
-    padding: 0 10px 0 10px;
 }
 
 
@@ -134,6 +118,7 @@ p {
 
 .bus-animation {
     position: relative;
+    overflow: hidden;
 }
 
 .clouds {
@@ -154,14 +139,6 @@ p {
 
 }
 
-.top-of-the-box-cantine {
-    display: flex;
-    flex-direction: row;
-    background-color: #E1AEFC;
-    justify-content: space-between;
-    border-radius: 1rem 1rem 0 0;
-    padding: 0 10px 0 10px;
-}
 
 .cantine-box {
     box-shadow: 5px 5px 0px 0px #a86dc8, 10px 10px 0px 0px #743f91, 15px 15px 0px 0px #410e5c, 5px 5px 15px 5px rgba(0, 0, 0, 0);
@@ -194,6 +171,8 @@ p {
 
 .weather {
     grid-area: 2 / 2 / 3 / 3;
+    background-color: #746ee8ac;
+
 }
 
 #cantine {
@@ -211,15 +190,6 @@ p {
     bottom: 0;
     margin: auto;
     padding: 10px;
-}
-
-.top-of-the-box-teams {
-    display: flex;
-    flex-direction: row;
-    background-color: #70ff61;
-    justify-content: space-between;
-    border-radius: 1rem 1rem 0 0;
-    padding: 0 10px 0 10px;
 }
 
 
@@ -254,14 +224,6 @@ p {
     padding: 0.6vw 0;
 }
 
-.top-of-the-box-weather {
-    display: flex;
-    flex-direction: row;
-    background-color: #746ee8;
-    justify-content: space-between;
-    border-radius: 1rem 1rem 0 0;
-    padding: 0 10px 0 10px;
-}
 
 .teams-asset {
     display: block;
@@ -305,7 +267,7 @@ p {
     box-sizing: border-box;
     bottom: 0 !important;
     box-shadow: none;
-    background-color: #ff0004;
+    background-color: #ff0004ac;
     overflow: hidden;
     border-radius: 0;
     white-space: nowrap;
