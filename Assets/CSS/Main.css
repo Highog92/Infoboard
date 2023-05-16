@@ -150,29 +150,29 @@ p {
 
 .cantine-box {
     grid-area: 1 / 1 / 2 / 2;
-    background-color: #E1AEFCac;
+    background-color: #E1AEFC83;
 }
 
 .bus-times-box {
     grid-area: 2 / 1 / 3 / 2;
-    background-color: #FFB640ac;
+    background-color: #FFB64083;
 }
 
 .time {
     grid-area: 1 / 2 / 3 / 3;
-    background-color: #7DFFFFac;
+    background-color: #7DFFFF83;
     grid-row-start: 1;
     grid-row-end: 2;
 }
 
 .teams-box {
     grid-area: 1 / 3 / 3 / 4;
-    background-color: #70ff61ac;
+    background-color: #70ff6183;
 }
 
 .weather {
     grid-area: 2 / 2 / 3 / 3;
-    background-color: #746ee8ac;
+    background-color: #746ee883;
     box-shadow: 5px 5px 0px 0px #746ee8, 10px 10px 0px 0px #506fae, 15px 15px 0px 0px #506fae, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 
 }
@@ -282,7 +282,7 @@ p {
 }
 
 #weather-img {
-    /* height: 50%; */
+    animation: weather 2s infinite ease-in-out;
 }
 
 
@@ -393,3 +393,15 @@ p {
     }
 
 }
+
+@keyframes cutlery {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
