@@ -65,11 +65,11 @@ p {
 }
 
 #clock {
-    font-size: 2vw;
+    font-size: 2.6vw;
 }
 
 #date {
-    font-size: 1vw;
+    font-size: 1.6vw;
 }
 
 
@@ -190,10 +190,12 @@ p {
 
 .cantine-asset {
     display: block;
-    width: 40%;
+    width: 25%;
     bottom: 0;
     margin: auto;
     padding: 10px;
+    animation: cutlery 5s linear infinite;
+
 }
 
 #cantineTable th {
@@ -399,3 +401,15 @@ p {
         transform: translateY(-0.5vw);
     }
 }
+@keyframes cutlery {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+
