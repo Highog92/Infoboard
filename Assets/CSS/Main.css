@@ -21,7 +21,7 @@ body {
 
 main {
     display: grid;
-    grid-template-columns: 2.5fr 0.1fr 3fr;
+    grid-template-columns: 2fr 1fr 3fr;
     margin-right: 15px;
     /* grid-template-columns: repeat(3, 1fr); */
     grid-template-rows: repeat(2, auto);
@@ -147,9 +147,9 @@ p {
     position: absolute;
     background-color: #333;
     border-radius: 20px;
-    height: 50px;
+    height: 10px;
     width: 100%;
-    bottom: 30px;
+    bottom: 10px;
     overflow: hidden;
 }
 
@@ -157,10 +157,10 @@ p {
     content: "";
     position: absolute;
     background-color: #fefefef5;
-    width: 200px;
-    height: 50px;
+    width: 100px;
+    height: 10px;
     border-radius: 50px;
-    animation: move 3s linear infinite;
+    animation: cloud 4s linear infinite;
     box-shadow: 500px 0px rgb(255, 255, 255),
         /* 1000px 0px rgb(255, 255, 255), */
         /* 1500px 0px rgb(255, 255, 255), */
@@ -171,17 +171,6 @@ p {
         /* 4000px 0px rgb(255, 255, 255); */
 }
 
-/* .road:after {
-    content: "";
-    position: absolute;
-    height: 50px;
-    width: 100%;
-    bottom: 50px;
-    background-color: #333;
-    border-radius: 20%;
-    box-shadow: 27px 0 #333; */
-/* animation: move 1s linear infinite; */
-/* } */
 
 .cantine-box {
     box-shadow: 5px 5px 0px 0px #a86dc8, 10px 10px 0px 0px #743f91, 15px 15px 0px 0px #410e5c, 5px 5px 15px 5px rgba(0, 0, 0, 0);
@@ -246,6 +235,7 @@ p {
     font-weight: normal;
     text-align: start;
     text-transform: capitalize;
+
 }
 
 #cantineTable td {
@@ -267,7 +257,6 @@ p {
 #teams {
     display: flex;
     flex-direction: column;
-    text-align: center;
     font-size: 1vw;
     border-radius: 0 0 1rem 1rem;
     padding: 1rem;
@@ -278,6 +267,7 @@ p {
     width: 25%;
     font-size: 1.5vw;
     font-weight: normal;
+    text-align: start;
 }
 
 #teams table td {
@@ -378,7 +368,7 @@ p {
     }
 
     100% {
-        transform: translateX(-850%);
+        transform: translateX(-750%);
     }
 }
 
