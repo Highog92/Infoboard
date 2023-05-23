@@ -10,23 +10,33 @@ html::-webkit-scrollbar {
 
 body {
     font-family: "VCR OSD Mono", "sans-serif";
-    font-size: 3rem;
     background-image:
         url("/Assets/Images/windowsbg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+#app {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 
 main {
     display: grid;
-    grid-template-columns: 2.5fr 0.1fr 3fr;
+    /* grid-template-columns: 1.5fr 1fr 1.5fr; */
     margin-right: 15px;
-    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, auto);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -34,16 +44,15 @@ section {
     border-radius: 1rem;
     /* background-color: #FDFBE6; */
     background-color: #fefee3a0;
-    margin: 2rem;
+    margin: 0.65vw;
     box-shadow: 5px 5px 0px 0px #88C0E4, 10px 10px 0px 0px #6580B7, 15px 15px 0px 0px #486cb5, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
 
-p {
-    font-size: 3rem;
-}
+
 
 .window-features {
-    width: 6vw;
+    margin: auto 0 auto auto;
+    height: 1vw;
 }
 
 
@@ -185,8 +194,8 @@ p {
 
 .cantine-box {
     box-shadow: 5px 5px 0px 0px #a86dc8, 10px 10px 0px 0px #743f91, 15px 15px 0px 0px #410e5c, 5px 5px 15px 5px rgba(0, 0, 0, 0);
-    grid-row-start: 1;
-    grid-row-end: 2;
+    /* grid-row-start: 1; */
+    /* grid-row-end: 2; */
 
 }
 
@@ -303,7 +312,7 @@ p {
     font-size: 1rem;
     border-radius: 0 0 1rem 1rem;
     margin: auto;
-    width: 40%;
+    width: 20%;
     justify-content: center;
     /* padding-bottom: 50px; */
 
