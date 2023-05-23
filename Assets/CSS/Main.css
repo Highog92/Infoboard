@@ -162,13 +162,13 @@ p {
     border-radius: 50px;
     animation: move 3s linear infinite;
     box-shadow: 500px 0px rgb(255, 255, 255),
-        1000px 0px rgb(255, 255, 255),
-        1500px 0px rgb(255, 255, 255),
-        2000px 0px rgb(255, 255, 255),
-        2500px 0px rgb(255, 255, 255),
-        3000px 0px rgb(255, 255, 255),
-        3500px 0px rgb(255, 255, 255),
-        4000px 0px rgb(255, 255, 255);
+        /* 1000px 0px rgb(255, 255, 255), */
+        /* 1500px 0px rgb(255, 255, 255), */
+        /* 2000px 0px rgb(255, 255, 255), */
+        /* 2500px 0px rgb(255, 255, 255), */
+        /* 3000px 0px rgb(255, 255, 255), */
+        /* 3500px 0px rgb(255, 255, 255), */
+        /* 4000px 0px rgb(255, 255, 255); */
 }
 
 /* .road:after {
