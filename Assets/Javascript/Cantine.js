@@ -4,27 +4,32 @@ const thisWeeksMeals = "https://infoskaerm.techcollege.dk/umbraco/api/content/ge
 
 let meals;
 
-fetch(thisWeeksMeals)
-    .then((response) => {
-        //parsing data
-        return response.json()
-    })
+getMeals()
 
-    .then((data) => {
-        //The data you wanna use
-        console.log(data);
-        meals = data
-    })
 
-    .catch((error) => {
-        //If theres an error
-        console.error(error)
-    })
+function getMeals() {
+    fetch(thisWeeksMeals)
+        .then((response) => {
+            //parsing data
+            return response.json()
+        })
 
-    .finally(() => {
-        //When all is set and done
-        document.querySelector('#cantineTable').innerHTML =
-            `
+        .then((data) => {
+            //The data you wanna use
+            console.log(data);
+            meals = data
+        })
+
+        .catch((error) => {
+            //If theres an error
+            console.error(error)
+        })
+
+        .finally(() => {
+            //When all is set and done
+            document.querySelector('#cantineTable').innerHTML =
+                `
+                <tbody id="cantineBody">
         <tr>
         <th>
         ${meals.Days[0].DayName}:
@@ -59,5 +64,38 @@ fetch(thisWeeksMeals)
         </th>
             <td>${meals.Days[4].Dish}</td>
         </tr>
+        </tbody>
         `
-    })
+
+        let todayDay = new Date().getDay()
+
+            let yepIndex = 0
+        switch (todayDay) {
+            case 0:
+                yepIndex = 0
+                break;
+            case 1:
+                yepIndex = 0
+                break;
+            case 2:
+                yepIndex = 1
+                break;
+            case 3:
+                yepIndex = 2
+                break;
+            case 4:
+                yepIndex = 3
+                break;
+            case 5:
+                yepIndex = 4
+                break;
+            case 6:
+                yepIndex = 0
+                break;
+        }
+            document.querySelector('#cantineBody').children[yepIndex].children[0].style = "font-weight: bold;"
+        })
+    setTimeout(() => {
+        getMeals()
+    }, 50000);
+};
