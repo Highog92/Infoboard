@@ -89,22 +89,23 @@ section {
     text-align: center;
     font-size: 1vw;
     border-radius: 0 0 1rem 1rem;
-    padding: 2rem;
+    padding: 0 2rem 0rem 2rem;
 }
 
 .boxInfo {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 2rem;
+    padding: 2rem 2rem 0rem 2rem;
+    font-size: 1.5vw;
 }
 
 .allBuses {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 10px;
-    font-size: 12rem;
+    padding: 0;
+    /* font-size: 12rem; */
 
 }
 
@@ -124,7 +125,7 @@ section {
     display: flex;
     justify-self: center;
     width: 100%;
-    bottom: 0;
+    /* bottom: 0; */
     animation: bus-asset 12s infinite ease-in-out, jump 1.5s infinite ease-in-out;
 }
 
@@ -253,11 +254,6 @@ section {
 
 
 .teams-box {
-    box-shadow: 5px 5px 0px 0px #ff758e, 10px 10px 0px 0px #f9294f, 15px 15px 0px 0px #830018, 5px 5px 15px 5px rgba(0, 0, 0, 0);
-    grid-row: span 2;
-}
-
-.teams-box {
     box-shadow: 5px 5px 0px 0px #31d146, 10px 10px 0px 0px #03a406, 15px 15px 0px 0px #017312, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 
 }
@@ -268,19 +264,23 @@ section {
     font-size: 1vw;
     border-radius: 0 0 1rem 1rem;
     padding: 1rem;
-
 }
 
+
 #teams table th {
-    width: 25%;
+    /* width: 25%; */
     font-size: 1.5vw;
     font-weight: normal;
     text-align: start;
+        height: fit-content
+
 }
 
 #teams table td {
     font-size: 1.1vw;
     padding: 0.6vw 0;
+    height: fit-content
+
 }
 
 
