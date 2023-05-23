@@ -6,7 +6,6 @@ html::-webkit-scrollbar {
 
 * {
     box-sizing: border-box;
-
 }
 
 body {
@@ -37,7 +36,6 @@ section {
     background-color: #fefee3a0;
     margin: 2rem;
     box-shadow: 5px 5px 0px 0px #88C0E4, 10px 10px 0px 0px #6580B7, 15px 15px 0px 0px #486cb5, 5px 5px 15px 5px rgba(0, 0, 0, 0);
-
 }
 
 p {
@@ -75,23 +73,22 @@ p {
 
 .bus-times-box {
     box-shadow: 5px 5px 0px 0px #FFB640, 10px 10px 0px 0px #bc8121, 15px 15px 0px 0px #835305, 5px 5px 15px 5px rgba(0, 0, 0, 0);
-
 }
 
 #bus-times {
     display: flex;
     flex-direction: column;
     text-align: center;
-    font-size: 1rem;
+    font-size: 1vw;
     border-radius: 0 0 1rem 1rem;
-
+    padding: 2rem;
 }
 
 .boxInfo {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 10px;
+    padding: 2rem;
 }
 
 .allBuses {
@@ -99,6 +96,12 @@ p {
     flex-direction: row;
     justify-content: space-between;
     padding: 0 10px;
+    font-size: 12rem;
+
+}
+
+.allBuses p {
+    font-size: 1.5vw;
 }
 
 .allBusesLine {
@@ -140,6 +143,45 @@ p {
 
 }
 
+.road {
+    position: absolute;
+    background-color: #333;
+    border-radius: 20px;
+    height: 50px;
+    width: 100%;
+    bottom: 30px;
+    overflow: hidden;
+}
+
+.road:before {
+    content: "";
+    position: absolute;
+    background-color: #fefefef5;
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    animation: move 3s linear infinite;
+    box-shadow: 500px 0px rgb(255, 255, 255),
+        1000px 0px rgb(255, 255, 255),
+        1500px 0px rgb(255, 255, 255),
+        2000px 0px rgb(255, 255, 255),
+        2500px 0px rgb(255, 255, 255),
+        3000px 0px rgb(255, 255, 255),
+        3500px 0px rgb(255, 255, 255),
+        4000px 0px rgb(255, 255, 255);
+}
+
+/* .road:after {
+    content: "";
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    bottom: 50px;
+    background-color: #333;
+    border-radius: 20%;
+    box-shadow: 27px 0 #333; */
+/* animation: move 1s linear infinite; */
+/* } */
 
 .cantine-box {
     box-shadow: 5px 5px 0px 0px #a86dc8, 10px 10px 0px 0px #743f91, 15px 15px 0px 0px #410e5c, 5px 5px 15px 5px rgba(0, 0, 0, 0);
@@ -358,6 +400,7 @@ p {
         transform: translateX(120%);
     }
 }
+
 @keyframes jump {
 
     0% {
@@ -384,23 +427,38 @@ p {
 
 }
 
+@keyframes move {
+    from {
+        left: 3000px;
+    }
+
+    to {
+        left: -9000px;
+    }
+}
+
 @keyframes weather {
     0% {
         transform: translateY(-0.5vw);
     }
+
     25% {
-        transform: translateY(0.5vw); 
+        transform: translateY(0.5vw);
     }
+
     50% {
         transform: translateY(-0.5vw);
     }
+
     75% {
-        transform: translateY(0.5vw); 
+        transform: translateY(0.5vw);
     }
+
     100% {
         transform: translateY(-0.5vw);
     }
 }
+
 @keyframes cutlery {
     from {
         transform: rotate(0deg);
@@ -411,5 +469,3 @@ p {
     }
 
 }
-
-
