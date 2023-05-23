@@ -86,4 +86,10 @@ function getBuses() {
 
 };
 
+function calcRemainingTime(Departure_datetime){
+
+    
+
+}
+
     // "rfTime" hvis den er forsinket
