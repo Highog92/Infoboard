@@ -211,6 +211,6 @@ function createRow(item) {
 function createDayRow(item) {
   return `
 		<tr>
-		<td colspan="5">${item.Day}</td>
+		<td colspan="5" class="fiveSpan">${item.Day}</td>
 	   </tr>`
 }

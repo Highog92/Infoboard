@@ -295,6 +295,9 @@ section {
     padding: 10px;
 
 }
+.fiveSpan {
+    text-align: center;
+}
 
 
 #weather-box {
@@ -342,7 +345,7 @@ section {
     white-space: nowrap;
     overflow: hidden;
     width: 100%;
-    margin: 2rem 0 0 0;
+    margin: 0.65vw 0 0 0;
 }
 
 
