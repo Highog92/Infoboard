@@ -24,6 +24,7 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
+    padding-right: 0.65vw;
 }
 
 
@@ -337,7 +338,7 @@ section {
     /* overflow: hidden; */
     border-radius: 0;
     white-space: nowrap;
-    /* overflow: hidden; */
+    overflow: hidden;
     width: 100%;
     margin: 0;
 }

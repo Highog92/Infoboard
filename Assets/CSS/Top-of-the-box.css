@@ -5,7 +5,10 @@
     justify-content: space-between;
     border-radius: 1rem 1rem 0 0;
     padding: 0 10px 0 10px;
-    font-size: 0.5vw;
+    font-size: 0.8vw;
+}
+.top-of-the-box-time p {
+    margin: 0.5vw 0;
 }
 
 .top-of-the-box-bus {
@@ -15,7 +18,10 @@
     justify-content: space-between;
     border-radius: 1rem 1rem 0 0;
     padding: 0 10px 0 10px;
-    font-size: 0.5vw;
+    font-size: 0.8vw;
+}
+.top-of-the-box-bus p {
+    margin: 0.5vw 0;
 }
 
 .top-of-the-box-cantine {
@@ -25,7 +31,10 @@
     justify-content: space-between;
     border-radius: 1rem 1rem 0 0;
     padding: 0 10px 0 10px;
-    font-size: 0.5vw;
+    font-size: 0.8vw;
+}
+.top-of-the-box-cantine p {
+    margin: 0.5vw 0;
 }
 
 .top-of-the-box-teams {
@@ -35,7 +44,10 @@
     justify-content: space-between;
     border-radius: 1rem 1rem 0 0;
     padding: 0 10px 0 10px;
-    font-size: 0.5vw;
+    font-size: 0.8vw;
+}
+.top-of-the-box-teams p {
+    margin: 0.5vw 0;
 }
 
 .top-of-the-box-weather {
@@ -45,5 +57,8 @@
     justify-content: space-between;
     border-radius: 1rem 1rem 0 0;
     padding: 0 10px 0 10px;
-    font-size: 0.5vw;
+    font-size: 0.8vw;
+}
+.top-of-the-box-weather p {
+    margin: 0.5vw 0;
 }
