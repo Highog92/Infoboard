@@ -329,32 +329,31 @@ section {
 
 
 .newsreel {
-    justify-items: center;
-    box-sizing: border-box;
-    bottom: 0 !important;
+    /* justify-items: center; */
+    /* box-sizing: border-box; */
+    /* bottom: 0; */
     box-shadow: none;
     background-color: #ff0004ac;
-    overflow: hidden;
+    /* overflow: hidden; */
     border-radius: 0;
     white-space: nowrap;
-    overflow: hidden;
+    /* overflow: hidden; */
     width: 100%;
-    margin: 2rem 0 0 0;
+    margin: 0;
 }
 
 
 #newsfeed {
     display: flex;
     flex-direction: row;
-    font-size: 1rem;
 }
 
 .scroll-left {
     width: 100vw;
     height: 7vh;
-    position: relative;
+    /* position: relative; */
     color: #ffffff;
-    transform: translateX(100%);
+    /* transform: translateX(100%); */
     /* Apply animation to this element */
     animation: scroll-left 70s linear infinite;
 }
@@ -366,18 +365,18 @@ section {
     margin: 0 70px;
     /* Starting position */
     align-items: center;
-    font-size: 4rem;
+    font-size: 2vw;
 }
 
 
 /* Move it (define the animation) */
 @keyframes scroll-left {
     0% {
-        transform: translateX(100%);
+        transform: translateX(110%);
     }
 
     100% {
-        transform: translateX(-750%);
+        transform: translateX(-700%);
     }
 }
 
