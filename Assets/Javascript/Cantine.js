@@ -31,37 +31,37 @@ function getMeals() {
                 `
                 <tbody id="cantineBody">
         <tr>
-        <th>
+        <td>
         ${meals.Days[0].DayName}:
-        </th>
+        </td>
             <td>${meals.Days[0].Dish}</td>
         </tr>
 
         <tr>
-        <th>
+        <td>
         ${meals.Days[1].DayName}:
-        </th>
+        </td>
             <td>${meals.Days[1].Dish}</td>
         </tr>
 
         <tr>
-        <th>
+        <td>
         ${meals.Days[2].DayName}:
-        </th>
+        </td>
             <td>${meals.Days[2].Dish}</td>
         </tr>
 
         <tr>
-        <th>
+        <td>
         ${meals.Days[3].DayName}:
-        </th>
+        </td>
             <td>${meals.Days[3].Dish}</td>
         </tr>
 
         <tr>
-        <th>
+        <td>
         ${meals.Days[4].DayName}:
-        </th>
+        </td>
             <td>${meals.Days[4].Dish}</td>
         </tr>
         </tbody>
@@ -93,7 +93,7 @@ function getMeals() {
                 yepIndex = 0
                 break;
         }
-            document.querySelector('#cantineBody').children[yepIndex].children[0].style = "font-weight: bold;"
+            document.querySelector('#cantineBody').children[yepIndex].children[0].classList.add('todayFood')
         })
     setTimeout(() => {
         getMeals()

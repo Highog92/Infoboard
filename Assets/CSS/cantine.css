@@ -32,16 +32,24 @@
     transform-origin: center;
 }
 
-#cantineTable th {
+/* #cantineTable th {
     width: 25%;
     font-size: 1vw;
-    font-weight: normal;
     text-align: start;
     text-transform: capitalize;
-
-}
+} */
 
 #cantineTable td {
     font-size: 1vw;
     padding: 0.6vw 0;
+}
+
+#cantineBody tr td:nth-child(1) {
+    text-transform: capitalize;
+    width: 20%;
+}
+
+.todayFood {
+    font-weight: bold;
+    text-transform: capitalize;
 }
