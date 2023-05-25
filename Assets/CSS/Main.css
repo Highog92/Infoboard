@@ -185,12 +185,13 @@ section {
 }
 
 @keyframes cutlery {
-    from {
-        transform: rotate(0deg) translateX(-300%);
+    0% {
+
+        transform: translateX(-300px) rotateZ(-360deg);
     }
 
-    to {
-        transform: rotate(360deg) translateX(400%)
+    100% {
+        transform: translateX(400px);
     }
 
 }
