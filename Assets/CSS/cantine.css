@@ -29,6 +29,7 @@
     margin: auto;
     padding: 10px;
     animation: cutlery 7s linear infinite;
+    transform-origin: center;
 }
 
 #cantineTable th {
