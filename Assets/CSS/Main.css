@@ -164,23 +164,23 @@ section {
 
 @keyframes weather {
     0% {
-        transform: translateY(-0.5vw);
+        transform: translateY(-0.4vw);
     }
 
     25% {
-        transform: translateY(0.5vw);
+        transform: translateY(0.4vw);
     }
 
     50% {
-        transform: translateY(-0.5vw);
+        transform: translateY(-0.4vw);
     }
 
     75% {
-        transform: translateY(0.5vw);
+        transform: translateY(0.4vw);
     }
 
     100% {
-        transform: translateY(-0.5vw);
+        transform: translateY(-0.4vw);
     }
 }
 

@@ -31,6 +31,7 @@
     font-weight: normal;
     text-align: start;
     height: fit-content;
+    padding-top: 0.65vw;
 }
 
 #teams table td {
@@ -38,11 +39,11 @@
     padding: 0.65vw 0;
     height: fit-content;
     /* line-height: 0; */
+    border-top: 0.1vw solid black;
 }
 
 
 #teams table tbody tr {
-    margin: auto;
 }
 
 
