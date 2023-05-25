@@ -25,13 +25,13 @@
 #cutlery {
     position: absolute;
     bottom: 0;
+    width: 100%;
 }
 
 .cantine-asset {
     display: block;
     position: relative;
     width: 25%;
-    bottom: 25%;
     margin: auto;
     /* padding: 10px; */
     animation: cutlery 35s linear infinite;
