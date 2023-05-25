@@ -54,6 +54,7 @@
 #cantineBody tr td:nth-child(1) {
     text-transform: capitalize;
     width: 30%;
+    vertical-align: top;
     /* text-align: center; */
     /* border: 0.2vw solid black;
     background-color: #662473; */
@@ -65,7 +66,30 @@
 
 .todayFood {
     color: blueviolet;
+    animation: colorSwitch 4s infinite ease-in;
     /* border: 0.2vw solid black;*/
 
     /* background-color: #E1AEFC83; */
+}
+
+@keyframes colorSwitch {
+    0% {
+        color: #000000;
+    }
+
+    25% {
+        color: blueviolet;
+    }
+
+    50% {
+        color: #000000;
+    }
+
+    75% {
+        color: blueviolet;
+    }
+
+    100% {
+        color: #000000;
+    }
 }
