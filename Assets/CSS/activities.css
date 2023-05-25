@@ -39,12 +39,9 @@
     padding: 0.65vw 0;
     height: fit-content;
     /* line-height: 0; */
-    border-top: 0.1vw solid black;
+    border-top: 0.11vw solid black;
 }
 
-
-#teams table tbody tr {
-}
 
 
 .teams-asset {
