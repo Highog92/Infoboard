@@ -101,10 +101,11 @@
     background-color: #fefefef5;
     width: 100px;
     height: 10px;
+    bottom: 18px;
     border-radius: 40px;
     animation: cloud 4s linear infinite;
     box-shadow: 500px 0px rgb(255, 255, 255),
-        /* 1000px 0px rgb(255, 255, 255), */
+        1100px 0px rgb(255, 255, 255);
         /* 1500px 0px rgb(255, 255, 255), */
         /* 2000px 0px rgb(255, 255, 255), */
         /* 2500px 0px rgb(255, 255, 255), */
