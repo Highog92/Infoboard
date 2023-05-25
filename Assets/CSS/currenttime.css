@@ -1,0 +1,28 @@
+#time-box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* font-size: 1vw; */
+    border-radius: 0 0 1rem 1rem;
+    gap: 1.6rem;
+    margin-top: 4vw;
+}
+
+#time-box p {
+    margin: 0;
+}
+
+#clock {
+    font-size: 2.6vw;
+}
+
+#date {
+    font-size: 1.6vw;
+}
+
+.time {
+    grid-area: 1 / 2 / 3 / 3;
+    background-color: #7DFFFF83;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}

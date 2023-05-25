@@ -1,0 +1,46 @@
+.cantine-box {
+    box-shadow: 5px 5px 0px 0px #a86dc8, 10px 10px 0px 0px #743f91, 15px 15px 0px 0px #410e5c, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    /* grid-row-start: 1; */
+    /* grid-row-end: 2; */
+
+}
+
+.cantine-box {
+    grid-area: 1 / 1 / 2 / 2;
+    background-color: #E1AEFC83;
+}
+
+#cantine {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
+    font-size: 1rem;
+    border-radius: 0 0 1rem 1rem;
+    overflow: hidden;
+}
+
+
+
+.cantine-asset {
+    display: block;
+    width: 25%;
+    bottom: 0;
+    margin: auto;
+    padding: 10px;
+    animation: cutlery 7s linear infinite;
+}
+
+#cantineTable th {
+    width: 25%;
+    font-size: 1vw;
+    font-weight: normal;
+    text-align: start;
+    text-transform: capitalize;
+
+}
+
+#cantineTable td {
+    font-size: 1vw;
+    padding: 0.6vw 0;
+}
