@@ -94,6 +94,7 @@ function getMeals() {
                 break;
         }
             document.querySelector('#cantineBody').children[yepIndex].children[0].classList.add('todayFood')
+            document.querySelector('#cantineBody').children[yepIndex].children[1].classList.add('todayFood')
         })
     setTimeout(() => {
         getMeals()

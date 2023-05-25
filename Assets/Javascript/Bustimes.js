@@ -76,6 +76,7 @@ function getBuses() {
                 <p>${busarrivals.MultiDepartureBoard.Departure[4].time}</p>
             </div>
          `
+         console.log(busarrivals);
             setTimeout(() => {
                 getBuses()
             }, 1000);
@@ -88,4 +89,4 @@ function calcRemainingTime(Departure_datetime){
 
 }
 
-    // "rfTime" hvis den er forsinket
+    // "rtTime" hvis den er forsinket

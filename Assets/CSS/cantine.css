@@ -66,6 +66,7 @@
 .todayFood {
     font-weight: bold;
     text-transform: capitalize;
-    /* border: 0.2vw solid black;
-    background-color: #E1AEFC83; */
+    /* border: 0.2vw solid black;*/
+    
+    background-color: #E1AEFC83;
 }
