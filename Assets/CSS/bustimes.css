@@ -57,7 +57,7 @@
     display: flex;
     position: relative;
     justify-self: center;
-    width: 40%;
+    width: 35%;
     z-index: 9;
     animation: bus-asset 12s infinite ease-in-out, jump 1.5s infinite ease-in-out;
     bottom: 10px;

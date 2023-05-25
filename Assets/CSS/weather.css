@@ -29,7 +29,7 @@
 
 #weather-explanation {
     font-size: 1.9vw;
-    margin-top: 0;
+    margin: 0 0 1vw  0;
 }
 
 .img-box {
