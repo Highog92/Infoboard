@@ -9,6 +9,7 @@
     grid-area: 1 / 1 / 2 / 2;
     background-color: #E1AEFC83;
     overflow: hidden;
+    position: relative;
 }
 
 #cantine {
@@ -21,7 +22,10 @@
     overflow: hidden;
 }
 
-
+#cutlery {
+    position: absolute;
+    bottom: 0;
+}
 
 .cantine-asset {
     display: block;
@@ -29,8 +33,8 @@
     width: 25%;
     bottom: 25%;
     margin: auto;
-    padding: 10px;
-    animation: cutlery 5s linear infinite;
+    /* padding: 10px; */
+    animation: cutlery 35s linear infinite;
     transform-origin: center;
 }
 

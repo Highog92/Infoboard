@@ -82,7 +82,7 @@ section {
     color: #ffffff;
     transform: translateX(100%);
     /* Apply animation to this element */
-    animation: scroll-left 100s linear infinite;
+    animation: scroll-left 90s linear infinite;
 }
 
 .scroll-left p {
@@ -103,7 +103,7 @@ section {
     }
 
     100% {
-        transform: translateX(-450%);
+        transform: translateX(-100%);
     }
 }
 
@@ -187,11 +187,25 @@ section {
 @keyframes cutlery {
     0% {
 
-        transform: translateX(-300%) rotateZ(-460deg);
+        transform: translateX(-350%) rotateZ(-700deg);
+    }
+
+    25% {
+
+        transform: translateX(350%) rotateZ(0deg);
+    }
+
+    50% {
+
+        transform: translateX(-350%) rotateZ(-700deg);
+    }
+
+    75% {
+        transform: translateX(350%) rotateZ(0deg);
     }
 
     100% {
-        transform: translateX(300%);
+        transform: translateX(-350%) rotateZ(-700deg);
     }
 
 }
