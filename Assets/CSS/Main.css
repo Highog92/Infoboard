@@ -92,7 +92,7 @@ section {
     margin: 0 70px;
     /* Starting position */
     align-items: center;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 
@@ -103,7 +103,7 @@ section {
     }
 
     100% {
-        transform: translateX(-200%);
+        transform: translateX(-300%);
     }
 }
 
