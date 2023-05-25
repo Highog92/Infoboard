@@ -82,7 +82,7 @@ section {
     color: #ffffff;
     transform: translateX(100%);
     /* Apply animation to this element */
-    animation: scroll-left 70s linear infinite;
+    animation: scroll-left 100s linear infinite;
 }
 
 .scroll-left p {
@@ -103,7 +103,7 @@ section {
     }
 
     100% {
-        transform: translateX(-750%);
+        transform: translateX(-450%);
     }
 }
 
