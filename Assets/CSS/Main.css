@@ -122,7 +122,7 @@ section {
     }
 
     100% {
-        transform: translateX(200%);
+        transform: translateX(300%);
     }
 }
 
@@ -187,11 +187,11 @@ section {
 @keyframes cutlery {
     0% {
 
-        transform: translateX(-300px) rotateZ(-360deg);
+        transform: translateX(-300%) rotateZ(-360deg);
     }
 
     100% {
-        transform: translateX(400px);
+        transform: translateX(300%);
     }
 
 }
