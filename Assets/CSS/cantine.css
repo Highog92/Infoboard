@@ -8,6 +8,7 @@
 .cantine-box {
     grid-area: 1 / 1 / 2 / 2;
     background-color: #E1AEFC83;
+    overflow: hidden;
 }
 
 #cantine {
@@ -24,11 +25,12 @@
 
 .cantine-asset {
     display: block;
+    position: relative;
     width: 25%;
-    bottom: 0;
+    bottom: 25%;
     margin: auto;
     padding: 10px;
-    animation: cutlery 7s linear infinite;
+    animation: cutlery 5s linear infinite;
     transform-origin: center;
 }
 
