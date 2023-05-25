@@ -64,9 +64,10 @@
 }
 
 .todayFood {
-    font-weight: bold;
+    /* font-weight: 900; */
     text-transform: capitalize;
+    color: blueviolet;
     /* border: 0.2vw solid black;*/
-    
-    background-color: #E1AEFC83;
+
+    /* background-color: #E1AEFC83; */
 }
