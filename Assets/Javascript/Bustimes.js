@@ -76,14 +76,10 @@ function getBuses() {
                 <p>${busarrivals.MultiDepartureBoard.Departure[4].time}</p>
             </div>
          `
-
-
-
             setTimeout(() => {
                 getBuses()
             }, 1000);
         })
-
 };
 
 function calcRemainingTime(Departure_datetime){

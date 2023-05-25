@@ -47,3 +47,12 @@
     padding: 0 10px 0 10px;
     font-size: 0.5vw;
 }
+
+.top-of-the-box-bus p,
+.top-of-the-box-cantine p,
+.top-of-the-box-teams p,
+.top-of-the-box-time p,
+.top-of-the-box-weather p {
+    font-size: 0.8vw;
+    margin: 0.2vw 0;
+}
