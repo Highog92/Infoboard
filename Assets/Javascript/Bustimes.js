@@ -76,10 +76,9 @@ function getBuses() {
                 <p>${busarrivals.MultiDepartureBoard.Departure[4].time}</p>
             </div>
          `
-         console.log(busarrivals);
             setTimeout(() => {
                 getBuses()
-            }, 1000);
+            }, 300000);
         })
 };
 

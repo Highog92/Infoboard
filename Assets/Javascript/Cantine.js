@@ -67,36 +67,37 @@ function getMeals() {
         </tbody>
         `
 
-        let todayDay = new Date().getDay()
+            let todayDay = new Date().getDay()
 
             let yepIndex = 0
-        switch (todayDay) {
-            case 0:
-                yepIndex = 0
-                break;
-            case 1:
-                yepIndex = 0
-                break;
-            case 2:
-                yepIndex = 1
-                break;
-            case 3:
-                yepIndex = 2
-                break;
-            case 4:
-                yepIndex = 3
-                break;
-            case 5:
-                yepIndex = 4
-                break;
-            case 6:
-                yepIndex = 0
-                break;
-        }
+            switch (todayDay) {
+                case 0:
+                    yepIndex = 0
+                    break;
+                case 1:
+                    yepIndex = 0
+                    break;
+                case 2:
+                    yepIndex = 1
+                    break;
+                case 3:
+                    yepIndex = 2
+                    break;
+                case 4:
+                    yepIndex = 3
+                    break;
+                case 5:
+                    yepIndex = 4
+                    break;
+                case 6:
+                    yepIndex = 0
+                    break;
+            }
             document.querySelector('#cantineBody').children[yepIndex].children[0].classList.add('todayFood')
             document.querySelector('#cantineBody').children[yepIndex].children[1].classList.add('todayFood')
+
+            setTimeout(() => {
+                getMeals()
+            }, 43200000);
         })
-    setTimeout(() => {
-        getMeals()
-    }, 50000);
 };
