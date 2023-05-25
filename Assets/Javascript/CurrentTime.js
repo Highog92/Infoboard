@@ -15,24 +15,31 @@ function updateTime() {
     let thisMonth = date.getMonth()
     let todayMonth;
 
+    let gifimage = document.querySelector('#gif')
+
     switch (todayDay) {
         case 0:
             todayName = "Søndag"
             break;
         case 1:
             todayName = "Mandag"
+            gifimage.src = "Assets/Images/Donnatello.gif";
             break;
         case 2:
             todayName = "Tirsdag"
+            gifimage.src = "Assets/Images/Ralph.gif";
             break;
         case 3:
             todayName = "Onsdag"
+            gifimage.src = "Assets/Images/Splinter.gif";
             break;
         case 4:
             todayName = "Torsdag"
+            gifimage.src = "Assets/Images/Donnatello.gif";
             break;
         case 5:
             todayName = "Fredag"
+            gifimage.src = "Assets/Images/Michael angelo.gif";
             break;
         case 6:
             todayName = "Lørdag"

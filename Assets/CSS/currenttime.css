@@ -27,7 +27,7 @@
     grid-row-end: 2;
 }
 
-iframe {
-    margin: 50% 40% 0% 40%;
-    justify-content: center;
+#gif {
+    display: flex;
+    margin: auto;
 }
