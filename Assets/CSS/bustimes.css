@@ -25,6 +25,10 @@
     justify-content: space-between;
     padding: 0rem 2rem 0rem 2rem;
     font-size: 1.5vw;
+    margin: 0 0.5vw;
+}
+.boxInfo p {
+    margin: 1vw 0;
 }
 
 .allBuses {
@@ -43,9 +47,9 @@
 
 .allBusesLine {
     background-color: #FFB640;
-    border: 2px solid black;
-    border-radius: 4px;
-    padding: 2px;
+    border: 0.15vw solid black;
+    border-radius: 0.3vw;
+    padding: 0.1vw;
     font-size: 1vw;
 }
 

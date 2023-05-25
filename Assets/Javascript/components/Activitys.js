@@ -194,7 +194,7 @@ export const ActivityList = async () => {
  */
 function createRow(item) {
   return `
-		<tr>
+  <tr>
 		<td>${item.Time}</td>
 		<td>${item.Education}</td>
 		<td>${item.Team}</td>
