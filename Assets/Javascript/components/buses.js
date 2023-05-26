@@ -22,19 +22,19 @@ export const BusPlan = async () => {
             //     <p>${busarrivals.MultiDepartureBoard.Departure[0].time}</p>
             // </div>
 
-            const container = document.createElement("div")
-            container.classList.add("allBuses")
-            const busLine = document.createElement("p")
-            busLine.classList.add("allBusesLine")
-            const busDir = document.createElement("p")
-            const busTime = document.createElement("p")
+            // const container = document.createElement("div")
+            // container.classList.add("allBuses")
+            // const busLine = document.createElement("p")
+            // busLine.classList.add("allBusesLine")
+            // const busDir = document.createElement("p")
+            // const busTime = document.createElement("p")
 
-            busLine.innerText = item.line
-            busDir.innerText = item.direction
-            busTime.innerText = calcRemainingTime(`${item.date} ${item.time}`)
+            // busLine.innerText = item.line
+            // busDir.innerText = item.direction
+            // busTime.innerText = calcRemainingTime(`${item.date} ${item.time}`)
 
-            container.append(busLine, busDir, busTime)
-            root.append(container)
+            // container.append(busLine, busDir, busTime)
+            // root.append(container)
 
         })
 

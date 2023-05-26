@@ -117,3 +117,11 @@
     /* 3500px 0px rgb(255, 255, 255), */
     /* 4000px 0px rgb(255, 255, 255); */
 }
+
+
+#busContainer {
+    width: 100%;
+}
+#busContainer table {
+    width: 100%;
+}
