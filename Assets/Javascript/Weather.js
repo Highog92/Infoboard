@@ -15,7 +15,7 @@ function weatheeer() {
 
         .then((data) => {
             //The data you wanna use
-            console.log(data);
+            // console.log(data);
             todaysWeather = data
 
             // document.querySelector('#weather-box').innerHTML = 
