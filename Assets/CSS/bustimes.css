@@ -47,6 +47,13 @@
     font-size: 1.5vw;
     margin: 0.5vw;
     text-align: start;
+    
+}
+.allBuses p:nth-child(2) {
+    flex-grow: 1;
+    margin-left: 6vw;
+    /* text-align: center; */
+    text-transform: uppercase;
 }
 
 .allBusesLine {

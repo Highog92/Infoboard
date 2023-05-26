@@ -29,8 +29,9 @@ export const BusPlan = async () => {
             const busDir = document.createElement("p")
             const busTime = document.createElement("p")
 
+            console.log(item.stop);
             busLine.innerText = item.line
-            busDir.innerText = item.direction
+            busDir.innerText = item.stop.substring(0, item.stop.indexOf(' '))
             busTime.innerText = calcRemainingTime(`${item.date} ${item.time}`)
 
             container.append(busLine, busDir, busTime)
