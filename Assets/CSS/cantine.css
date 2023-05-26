@@ -66,7 +66,7 @@
 
 .todayFood {
     color: rgb(108, 0, 210);
-    animation: colorSwitch 4s infinite ease-in-out;
+    animation: colorSwitch 2s infinite ease-in-out;
     /* border: 0.2vw solid black;*/
 
     /* background-color: #E1AEFC83; */
@@ -77,19 +77,12 @@
         color: #000000;
     }
 
-    25% {
-        color: rgb(108, 0, 210);
-    }
-
     50% {
-        color: #000000;
-    }
-
-    75% {
         color: rgb(108, 0, 210);
     }
 
     100% {
         color: #000000;
     }
+
 }
