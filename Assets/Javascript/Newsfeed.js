@@ -28,6 +28,7 @@ function neeews() {
 
                 document.querySelector('#newsreel').innerHTML += `
                 <p>${news.title}</p>
+                <p> - </p>
 
             `
             })
