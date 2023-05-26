@@ -1,4 +1,4 @@
-console.dir(document)
+// console.dir(document)
 
 updateTime()
 

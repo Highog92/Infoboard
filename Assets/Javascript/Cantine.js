@@ -16,7 +16,7 @@ function getMeals() {
 
         .then((data) => {
             //The data you wanna use
-            console.log(data);
+            // console.log(data);
             meals = data
         })
 

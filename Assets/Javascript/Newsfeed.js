@@ -21,7 +21,7 @@ function neeews() {
 
         .finally(() => {
             //When all is set and done
-            console.log(news);
+            // console.log(news);
             document.querySelector('#newsreel').innerHTML = ""
 
             news.items.map((news) => {

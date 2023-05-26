@@ -16,20 +16,21 @@
     text-align: center;
     font-size: 1vw;
     border-radius: 0 0 1rem 1rem;
-    padding: 0 2rem 0rem 2rem;
+    padding: 0 1vw 0 1vw;
 }
 
 .boxInfo {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0rem 2rem 0rem 2rem;
+    /* padding: 0rem 2rem 0rem 2rem; */
     font-size: 1.5vw;
-    margin: 0 0.5vw;
+    margin: 0 1.5vw;
+    border-bottom: 0.15vw solid black;
 }
 
 .boxInfo p {
-    margin: 1vw 0;
+    margin: 0.7vw 0;
 }
 
 .allBuses {
@@ -46,6 +47,13 @@
     font-size: 1.5vw;
     margin: 0.5vw;
     text-align: start;
+    
+}
+.allBuses p:nth-child(2) {
+    flex-grow: 1;
+    margin-left: 6vw;
+    /* text-align: center; */
+    text-transform: uppercase;
 }
 
 .allBusesLine {
