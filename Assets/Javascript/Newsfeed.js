@@ -1,6 +1,7 @@
 const newsFeed = "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.dr.dk%2Fnyheder%2Fservice%2Ffeeds%2Fallenyheder%23"
 let news;
 
+neeews()
 function neeews() {
     fetch(newsFeed)
         .then((response) => {
@@ -20,7 +21,7 @@ function neeews() {
 
         .finally(() => {
             //When all is set and done
-
+            console.log(news);
             document.querySelector('#newsreel').innerHTML = ""
 
             news.items.map((news) => {
@@ -31,7 +32,7 @@ function neeews() {
             `
             })
             setTimeout(() => {
-                
+                neeews()
             }, 43200000);
         })
 };

@@ -94,7 +94,7 @@ export const ActivityList = async () => {
   nextday_activities.push(...data.filter((elm) => elm.Stamp >= nextdaystamp))
 
   // Hvis der er nogle næste dags aktiviteter
-  if (nextday_activities) {
+  if (nextday_activities > 1) {
 	// Laver læsevenlig dato format (Eks: Mandag d. 16. maj)
     const nextday_friendly = dayMonth2dk(nextday_activities[0].StartDate)
 	// Tilføjer array index med læsevenlig dato til activities
