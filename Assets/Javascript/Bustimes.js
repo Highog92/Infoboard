@@ -24,20 +24,6 @@ function getBuses() {
         .finally(() => {
             //When all is set and done
 
-
-            //     for (let i = 0; i < 5; i++) {
-            //         let removeRoadName = busarrivals.MultiDepartureBoard.Departure[i].stop
-            //             .replace(/\s*\([^)]*\)/, ''); // remove anything inside parentheses
-
-            //         document.querySelector('#bus-times').innerHTML = `
-            //     <div class="allBuses">
-            //         <p class="allBusesLine">${busarrivals.MultiDepartureBoard.Departure[i].line}</p>
-            //         <p>${removeRoadName.toUpperCase()}</p>
-            //         <p>${busarrivals.MultiDepartureBoard.Departure[i].time}</p>
-            //    </div>
-            //     `
-            //     }
-
             let removeRoadName0 = busarrivals.MultiDepartureBoard.Departure[0].stop
                 .replace(/\s*\([^)]*\)/, ''); // remove anything inside parentheses
             let removeRoadName1 = busarrivals.MultiDepartureBoard.Departure[1].stop
@@ -87,5 +73,21 @@ function calcRemainingTime(Departure_datetime){
     
 
 }
+
+
+
+// let today = new Date();
+// console.log(busarrivals);
+// let nextBuses = busarrivals.map() new Date(today.getFullYear() + "-12-25");
+
+// console.log(today);
+// console.log(Christmas);
+// var diffMs = (Christmas - today); // milliseconds between now & Christmas
+// console.log(diffMs);
+// var diffDays = Math.floor(diffMs / 86400000); // days
+// var diffHrs = Math.floor((diffMs % 86400000) / 3600000); // hours
+// var diffMins = Math.round(((diffMs % 86400000) % 3600000) / 60000); // minutes
+// console.log(diffMins + " minutes until Christmas =)");
+
 
     // "rtTime" hvis den er forsinket
