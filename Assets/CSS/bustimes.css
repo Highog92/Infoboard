@@ -27,6 +27,7 @@
     font-size: 1.5vw;
     margin: 0 0.5vw;
 }
+
 .boxInfo p {
     margin: 1vw 0;
 }
@@ -37,12 +38,14 @@
     justify-content: space-between;
     padding: 0;
     /* font-size: 12rem; */
+    text-align: start;
 
 }
 
 .allBuses p {
     font-size: 1.5vw;
     margin: 0.5vw;
+    text-align: start;
 }
 
 .allBusesLine {
@@ -106,10 +109,10 @@
     animation: cloud 4s linear infinite;
     box-shadow: 500px 0px rgb(255, 255, 255),
         1100px 0px rgb(255, 255, 255);
-        /* 1500px 0px rgb(255, 255, 255), */
-        /* 2000px 0px rgb(255, 255, 255), */
-        /* 2500px 0px rgb(255, 255, 255), */
-        /* 3000px 0px rgb(255, 255, 255), */
-        /* 3500px 0px rgb(255, 255, 255), */
-        /* 4000px 0px rgb(255, 255, 255); */
+    /* 1500px 0px rgb(255, 255, 255), */
+    /* 2000px 0px rgb(255, 255, 255), */
+    /* 2500px 0px rgb(255, 255, 255), */
+    /* 3000px 0px rgb(255, 255, 255), */
+    /* 3500px 0px rgb(255, 255, 255), */
+    /* 4000px 0px rgb(255, 255, 255); */
 }

@@ -87,13 +87,13 @@ function updateTime() {
 
 
     if (hour < 10 && minutes < 10) {
-        document.querySelector('#time-box').innerHTML = `<p id="clock">0${hour}:0${minutes}</p><p id="date">${todayName} d.${todayDate} ${todayMonth}</p>`
+        document.querySelector('#time-box').innerHTML = `<p id="clock">0${hour}:0${minutes}</p><p id="date">${todayName} d.${todayDate}. ${todayMonth}</p>`
     } else if (hour < 10 && minutes >= 10) {
-        document.querySelector('#time-box').innerHTML = `<p id="clock">0${hour}:${minutes}</p><p id="date">${todayName} d.${todayDate} ${todayMonth}</p>`
+        document.querySelector('#time-box').innerHTML = `<p id="clock">0${hour}:${minutes}</p><p id="date">${todayName} d.${todayDate}. ${todayMonth}</p>`
     } else if (hour >= 10 && minutes < 10) {
-        document.querySelector('#time-box').innerHTML = `<p id="clock">${hour}:0${minutes}</p><p id="date">${todayName} d.${todayDate} ${todayMonth}</p>`
+        document.querySelector('#time-box').innerHTML = `<p id="clock">${hour}:0${minutes}</p><p id="date">${todayName} d.${todayDate}. ${todayMonth}</p>`
     } else if (hour >= 10 && minutes >= 10) {
-        document.querySelector('#time-box').innerHTML = `<p id="clock">${hour}:${minutes}</p><p id="date">${todayName} d.${todayDate} ${todayMonth}</p>`
+        document.querySelector('#time-box').innerHTML = `<p id="clock">${hour}:${minutes}</p><p id="date">${todayName} d.${todayDate}. ${todayMonth}</p>`
     }
 
     setTimeout(() => { updateTime() }, 1000);
