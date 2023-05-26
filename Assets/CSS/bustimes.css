@@ -106,13 +106,24 @@
     height: 10px;
     bottom: 18px;
     border-radius: 40px;
-    animation: cloud 4s linear infinite;
-    box-shadow: 500px 0px rgb(255, 255, 255),
-        1100px 0px rgb(255, 255, 255);
-    /* 1500px 0px rgb(255, 255, 255), */
-    /* 2000px 0px rgb(255, 255, 255), */
-    /* 2500px 0px rgb(255, 255, 255), */
-    /* 3000px 0px rgb(255, 255, 255), */
-    /* 3500px 0px rgb(255, 255, 255), */
-    /* 4000px 0px rgb(255, 255, 255); */
+    animation: cloud 4s linear infinite ;
+    /* animation-duration: 2s; */
+    box-shadow: 
+    -2000px 0px rgb(255, 255, 255),
+    -1500px 0px rgb(255, 255, 255),
+    -1000px 0px rgb(255, 255, 255),
+    -500px 0px rgb(255, 255, 255),
+    0px 0px rgb(255, 255, 255),
+    500px 0px rgb(255, 255, 255),
+    1000px 0px rgb(255, 255, 255),
+    1500px 0px rgb(255, 255, 255),
+    2000px 0px rgb(255, 255, 255),
+    2500px 0px rgb(255, 255, 255),
+    3000px 0px rgb(255, 255, 255),
+    3500px 0px rgb(255, 255, 255),
+    4000px 0px rgb(255, 255, 255),
+    4500px 0px rgb(255, 255, 255),
+    5000px 0px rgb(255, 255, 255),
+    5500px 0px rgb(255, 255, 255);
+    
 }

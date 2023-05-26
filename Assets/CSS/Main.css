@@ -143,11 +143,11 @@ section {
 
 @keyframes cloud {
     from {
-        left: 3000px;
+        left: 2000px;
     }
 
     to {
-        left: -1200px;
+        left: -4000px;
     }
 
 }
