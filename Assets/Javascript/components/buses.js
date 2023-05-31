@@ -42,7 +42,7 @@ export const BusPlan = async () => {
     }
     setTimeout(() => {
         BusPlan()
-    }, 60000);
+    }, 300000);
 
 }
 
