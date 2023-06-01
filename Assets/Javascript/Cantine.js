@@ -98,6 +98,6 @@ function getMeals() {
 
             setTimeout(() => {
                 getMeals()
-            }, 43200000);
+            }, 21600000);
         })
 };

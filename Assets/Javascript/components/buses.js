@@ -42,8 +42,7 @@ export const BusPlan = async () => {
     }
     setTimeout(() => {
         BusPlan()
-    }, 300000);
-
+    }, 60000);
 }
 
 function calcRemainingTime (departure_datetime) {
