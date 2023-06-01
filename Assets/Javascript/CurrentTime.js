@@ -96,5 +96,5 @@ function updateTime() {
         document.querySelector('#time-box').innerHTML = `<p id="clock">${hour}:${minutes}</p><p id="date">${todayName} d.${todayDate}. ${todayMonth}</p>`
     }
 
-    setTimeout(() => { updateTime() }, 1000);
+    setTimeout(() => { updateTime() }, 500);
 }
